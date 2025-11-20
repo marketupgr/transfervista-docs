@@ -1,4 +1,5 @@
 // @ts-check
+
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
@@ -7,30 +8,38 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "TransferVista Documentation",
+      defaultLocale: 'en',
       locales: {
-        root: {
+        en: {
           label: "English",
           lang: "en",
         },
         el: {
           label: "Ελληνικά",
+          lang: "el",
         },
       },
+      sidebar: [
+        { 
+          label: "Get started", 
+          translations: {
+            el: "Ξεκινώντας"
+          },
+          autogenerate: { directory: "guides" } 
+        },
+        { 
+          label: "Navigation", 
+          translations: {
+            el: "Μενού πλοήγησης"
+          },
+          autogenerate: { directory: "navigation" } 
+        },
+      ],
       social: [
         {
           icon: "document",
           label: "Website",
           href: "https://transfervista.com",
-        },
-      ],
-      sidebar: [
-        {
-          label: "Guides",
-          autogenerate: { directory: "guides" },
-        },
-        {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
         },
       ],
     }),

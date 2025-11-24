@@ -5,10 +5,13 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://transfervista.com",
+  base: "/docs",
+  trailingSlash: "ignore",
   integrations: [
     starlight({
       title: "TransferVista Documentation",
-      defaultLocale: 'en',
+      defaultLocale: "en",
       locales: {
         en: {
           label: "English",
@@ -20,19 +23,19 @@ export default defineConfig({
         },
       },
       sidebar: [
-        { 
-          label: "Get started", 
+        {
+          label: "Get started",
           translations: {
-            el: "Ξεκινώντας"
+            el: "Ξεκινώντας",
           },
-          autogenerate: { directory: "guides" } 
+          autogenerate: { directory: "guides" },
         },
-        { 
-          label: "Navigation", 
+        {
+          label: "Navigation",
           translations: {
-            el: "Μενού πλοήγησης"
+            el: "Μενού πλοήγησης",
           },
-          autogenerate: { directory: "navigation" } 
+          autogenerate: { directory: "navigation" },
         },
       ],
       social: [

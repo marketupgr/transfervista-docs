@@ -1,0 +1,62 @@
+>> ATTEMPT 1/5
+
+2025-11-24 00:07:41 [46mplatform[0m > Retry State: RetryManager(completeFailureBackoffPolicy=BackoffPolicy(minInterval=PT10S, maxInterval=PT30M, base=3), partialFailureBackoffPolicy=null, successiveCompleteFailureLimit=5, totalCompleteFailureLimit=10, successivePartialFailureLimit=1000, totalPartialFailureLimit=20, successiveCompleteFailures=1, totalCompleteFailures=1, successivePartialFailures=0, totalPartialFailures=0)
+ Backoff before next attempt: 10 seconds
+
+
+
+
+
+>> ATTEMPT 2/5
+
+2025-11-24 00:07:42 [46mplatform[0m > Retry State: RetryManager(completeFailureBackoffPolicy=BackoffPolicy(minInterval=PT10S, maxInterval=PT30M, base=3), partialFailureBackoffPolicy=null, successiveCompleteFailureLimit=5, totalCompleteFailureLimit=10, successivePartialFailureLimit=1000, totalPartialFailureLimit=20, successiveCompleteFailures=1, totalCompleteFailures=1, successivePartialFailures=0, totalPartialFailures=0)
+
+2025-11-24 00:07:42 [46mplatform[0m > Backing off for: 10 seconds.
+
+2025-11-24 00:08:32 [46mplatform[0m > Retry State: RetryManager(completeFailureBackoffPolicy=BackoffPolicy(minInterval=PT10S, maxInterval=PT30M, base=3), partialFailureBackoffPolicy=null, successiveCompleteFailureLimit=5, totalCompleteFailureLimit=10, successivePartialFailureLimit=1000, totalPartialFailureLimit=20, successiveCompleteFailures=2, totalCompleteFailures=2, successivePartialFailures=0, totalPartialFailures=0)
+ Backoff before next attempt: 30 seconds
+
+
+
+
+
+>> ATTEMPT 3/5
+
+2025-11-24 00:08:33 [46mplatform[0m > Retry State: RetryManager(completeFailureBackoffPolicy=BackoffPolicy(minInterval=PT10S, maxInterval=PT30M, base=3), partialFailureBackoffPolicy=null, successiveCompleteFailureLimit=5, totalCompleteFailureLimit=10, successivePartialFailureLimit=1000, totalPartialFailureLimit=20, successiveCompleteFailures=2, totalCompleteFailures=2, successivePartialFailures=0, totalPartialFailures=0)
+
+2025-11-24 00:08:33 [46mplatform[0m > Backing off for: 30 seconds.
+
+2025-11-24 00:09:44 [46mplatform[0m > Retry State: RetryManager(completeFailureBackoffPolicy=BackoffPolicy(minInterval=PT10S, maxInterval=PT30M, base=3), partialFailureBackoffPolicy=null, successiveCompleteFailureLimit=5, totalCompleteFailureLimit=10, successivePartialFailureLimit=1000, totalPartialFailureLimit=20, successiveCompleteFailures=3, totalCompleteFailures=3, successivePartialFailures=0, totalPartialFailures=0)
+ Backoff before next attempt: 1 minute 30 seconds
+
+
+
+
+
+>> ATTEMPT 4/5
+
+2025-11-24 00:09:44 [46mplatform[0m > Retry State: RetryManager(completeFailureBackoffPolicy=BackoffPolicy(minInterval=PT10S, maxInterval=PT30M, base=3), partialFailureBackoffPolicy=null, successiveCompleteFailureLimit=5, totalCompleteFailureLimit=10, successivePartialFailureLimit=1000, totalPartialFailureLimit=20, successiveCompleteFailures=3, totalCompleteFailures=3, successivePartialFailures=0, totalPartialFailures=0)
+
+2025-11-24 00:09:44 [46mplatform[0m > Backing off for: 1 minute 30 seconds.
+
+2025-11-24 00:11:55 [46mplatform[0m > Retry State: RetryManager(completeFailureBackoffPolicy=BackoffPolicy(minInterval=PT10S, maxInterval=PT30M, base=3), partialFailureBackoffPolicy=null, successiveCompleteFailureLimit=5, totalCompleteFailureLimit=10, successivePartialFailureLimit=1000, totalPartialFailureLimit=20, successiveCompleteFailures=4, totalCompleteFailures=4, successivePartialFailures=0, totalPartialFailures=0)
+ Backoff before next attempt: 4 minutes 30 seconds
+
+
+
+
+
+>> ATTEMPT 5/5
+
+2025-11-24 00:11:55 [46mplatform[0m > Retry State: RetryManager(completeFailureBackoffPolicy=BackoffPolicy(minInterval=PT10S, maxInterval=PT30M, base=3), partialFailureBackoffPolicy=null, successiveCompleteFailureLimit=5, totalCompleteFailureLimit=10, successivePartialFailureLimit=1000, totalPartialFailureLimit=20, successiveCompleteFailures=4, totalCompleteFailures=4, successivePartialFailures=0, totalPartialFailures=0)
+
+2025-11-24 00:11:56 [46mplatform[0m > Backing off for: 4 minutes 30 seconds.
+
+2025-11-24 00:17:07 [46mplatform[0m > Retry State: RetryManager(completeFailureBackoffPolicy=BackoffPolicy(minInterval=PT10S, maxInterval=PT30M, base=3), partialFailureBackoffPolicy=null, successiveCompleteFailureLimit=5, totalCompleteFailureLimit=10, successivePartialFailureLimit=1000, totalPartialFailureLimit=20, successiveCompleteFailures=5, totalCompleteFailures=5, successivePartialFailures=0, totalPartialFailures=0)
+ Backoff before next attempt: 13 minutes 30 seconds
+
+2025-11-24 00:17:07 [46mplatform[0m > Failing job: 4435, reason: Job failed after too many retries for connection 8e6510be-16d3-4d27-aa67-167ac63f9f38
+
+
+
+

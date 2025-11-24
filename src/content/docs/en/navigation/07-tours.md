@@ -7,6 +7,8 @@ description: Create and manage tours
 
 ### Creating Your First Tour
 
+![new tour](../../../../assets/tours.png)
+
 1. **Access the Tours Module**
    - Log into your TransferVista Admin panel
    - Navigate to `Settings > Tours` from the left sidebar
@@ -20,6 +22,9 @@ description: Create and manage tours
    - **Short Description**: Write a compelling 1-2 sentence summary that will appear in tour listings
    - **Category**: Assign a location-based category for organization (e.g., Lasithi, Samaria, Chania)
    - **Activity Type**: Specify the tour type (Wine experience, Gorge, Adventure, Archaeological, Visit)
+
+![new tour details](../../../../assets/tour-details.png)
+
 
 3. **Create Detailed Description**
    
@@ -105,9 +110,11 @@ Shows tours in an interactive carousel format, ideal for homepage features or pr
 
 1. **Access the Embed Codes**
    - Log into your TransferVista admin panel
-   - Navigate to `Settings > Customization` from the left sidebar
+   - Navigate to `Settings > Forms & Documents` from the left sidebar
    - Click on the `Tours` tab at the top
    - You'll see two sections: "Tours Listing" and "Tours Slider"
+
+![embed tour](../../../../assets/embed-form-for-tour-booking.png)
 
 2. **Choose Your Display Style**
    - **Tours Listing**: Shows all tours in a grid with filters - best for dedicated tour pages
@@ -126,12 +133,18 @@ Shows tours in an interactive carousel format, ideal for homepage features or pr
    - If using a page builder, look for an "HTML" or "Custom Code" block
    - The code works on any website platform - no configuration needed
 
+![tour carousel](../../../../assets/carousel-of-tours-booking-form.png)
+
+
 5. **Test the Integration**
    - Save and publish your page
    - Visit your website to see your tours displayed
    - Test the booking flow by clicking "Book Now"
    - Try the filters and sorting (for listing view)
    - Check on mobile devices to ensure responsive display
+
+![tour booking](../../../../assets/tour-booking-form.png)
+
 
 ## The Booking Experience
 

@@ -17,10 +17,14 @@ export default defineConfig({
           label: "English",
           lang: "en",
         },
-        el: {
-          label: "Ελληνικά",
-          lang: "el",
-        },
+          el: {
+            label: "Ελληνικά",
+            lang: "el",
+          },
+          es: {
+            label: "Español",
+            lang: "es",
+          }
       },
       sidebar: [
         {

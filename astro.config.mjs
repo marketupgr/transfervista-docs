@@ -29,12 +29,19 @@ export default defineConfig({
             label: "Français",
             lang: "fr",
           },
+          it: {
+            label: "Italiano",
+            lang: "it",
+          }
       },
       sidebar: [
         {
           label: "Get started",
           translations: {
             el: "Ξεκινώντας",
+            es: "Empezar",
+            fr: "Commencer",
+            it: "Iniziare",
           },
           autogenerate: { directory: "guides" },
         },
@@ -42,6 +49,9 @@ export default defineConfig({
           label: "Navigation",
           translations: {
             el: "Μενού πλοήγησης",
+            es: "Navegación",
+            fr: "Navigation",
+            it: "Navigazione",
           },
           autogenerate: { directory: "navigation" },
         },

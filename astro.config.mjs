@@ -32,6 +32,10 @@ export default defineConfig({
           it: {
             label: "Italiano",
             lang: "it",
+          },
+          de: {
+            label: "Deutsch",
+            lang: "de",
           }
       },
       sidebar: [
@@ -42,6 +46,7 @@ export default defineConfig({
             es: "Empezar",
             fr: "Commencer",
             it: "Iniziare",
+            de: "Anfangen",
           },
           autogenerate: { directory: "guides" },
         },
@@ -52,6 +57,7 @@ export default defineConfig({
             es: "Navegación",
             fr: "Navigation",
             it: "Navigazione",
+            de: "Navigationsleiste",
           },
           autogenerate: { directory: "navigation" },
         },

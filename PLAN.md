@@ -500,7 +500,6 @@ This page covers three related features for controlling when bookings can be mad
 | Overview | `partners/overview.md` | Planned | Understanding partner types and capabilities |
 | Booking Partners | `partners/booking-partners.md` | Planned | Partners who book transfers with commission |
 | Transfer Operators | `partners/transfer-operators.md` | Planned | Partners who fulfill transfer assignments |
-| Partner Configuration | `partners/configuration.md` | Planned | Detailed partner settings and options |
 
 #### Content Requirements
 
@@ -613,26 +612,7 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 11. Coupons & Discounts
-
-| Page | File | Status | Description |
-|------|------|--------|-------------|
-| Creating Coupons | `coupons/creating-coupons.md` | Planned | Discount codes |
-
-#### Content Requirements
-
-**Creating Coupons**
-- [ ] Coupon code creation
-- [ ] Discount types:
-  - [ ] Percentage discount
-  - [ ] Fixed amount discount
-- [ ] Expiration date setting
-- [ ] Coupon tracking
-- [ ] Deactivating coupons
-
----
-
-### 12. Communications
+### 11. Communications
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
@@ -665,7 +645,7 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 13. Reports & Invoices
+### 12. Reports & Invoices
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
@@ -705,7 +685,7 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 14. Customer Booking Form
+### 13. Customer Booking Form
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
@@ -760,137 +740,6 @@ This page covers three related features for controlling when bookings can be mad
 - [ ] Language selector usage
 - [ ] Default language setting
 - [ ] Translation coverage
-
----
-
-## Sidebar Configuration
-
-```javascript
-// astro.config.mjs
-export default defineConfig({
-  integrations: [
-    starlight({
-      title: 'TransferVista Docs',
-      sidebar: [
-        {
-          label: 'Getting Started',
-          items: [
-            { label: 'Introduction', link: '/getting-started/introduction' },
-            { label: 'Quick Start', link: '/getting-started/quick-start' },
-            { label: 'Dashboard Overview', link: '/getting-started/dashboard-overview' },
-          ],
-        },
-        {
-          label: 'Bookings',
-          items: [
-            { label: 'Overview', link: '/bookings/overview' },
-            { label: 'Transfers', link: '/bookings/transfers' },
-            { label: 'Tours', link: '/bookings/tours' },
-            { label: 'Calendar View', link: '/bookings/calendar' },
-            { label: 'Booking Details', link: '/bookings/booking-details' },
-            { label: 'Status Workflow', link: '/bookings/status-workflow' },
-            { label: 'Assigning Operators', link: '/bookings/assigning-operators' },
-            { label: 'Payments', link: '/bookings/payments' },
-          ],
-        },
-        {
-          label: 'Driver Experience',
-          items: [
-            { label: 'Overview', link: '/drivers/overview' },
-            { label: 'Viewing Assignments', link: '/drivers/viewing-assignments' },
-            { label: 'Managing Bookings', link: '/drivers/managing-bookings' },
-          ],
-        },
-        {
-          label: 'Settings',
-          items: [
-            { label: 'General', link: '/settings/general' },
-            { label: 'Bookings', link: '/settings/bookings' },
-            { label: 'Forms & Documents', link: '/settings/forms-documents' },
-            { label: 'Branding', link: '/settings/branding' },
-            { label: 'Permissions', link: '/settings/permissions' },
-            { label: 'Integrations', link: '/settings/integrations' },
-          ],
-        },
-        {
-          label: 'Catalog',
-          items: [
-            { label: 'Vehicles', link: '/catalog/vehicles' },
-            { label: 'Areas', link: '/catalog/areas' },
-            { label: 'Price Lists', link: '/catalog/price-lists' },
-            { label: 'Extras', link: '/catalog/extras' },
-          ],
-        },
-        {
-          label: 'Availability',
-          items: [
-            { label: 'Overview', link: '/availability/overview' },
-            { label: 'Zones', link: '/availability/zones' },
-            { label: 'Rules & Scheduling', link: '/availability/rules-scheduling' },
-          ],
-        },
-        {
-          label: 'Customers',
-          items: [
-            { label: 'Managing Customers', link: '/customers/managing-customers' },
-          ],
-        },
-        {
-          label: 'Team Management',
-          items: [
-            { label: 'Members', link: '/team/members' },
-            { label: 'Drivers', link: '/team/drivers' },
-          ],
-        },
-        {
-          label: 'Partners',
-          items: [
-            { label: 'Overview', link: '/partners/overview' },
-            { label: 'Booking Partners', link: '/partners/booking-partners' },
-            { label: 'Transfer Operators', link: '/partners/transfer-operators' },
-            { label: 'Configuration', link: '/partners/configuration' },
-          ],
-        },
-        {
-          label: 'Tours',
-          items: [
-            { label: 'Configuration', link: '/tours/configuration' },
-          ],
-        },
-        {
-          label: 'Coupons',
-          items: [
-            { label: 'Creating Coupons', link: '/coupons/creating-coupons' },
-          ],
-        },
-        {
-          label: 'Communications',
-          items: [
-            { label: 'Email Templates', link: '/communications/email-templates' },
-            { label: 'Email History', link: '/communications/email-history' },
-          ],
-        },
-        {
-          label: 'Reports & Invoices',
-          items: [
-            { label: 'Generating Reports', link: '/reports/generating-reports' },
-            { label: 'Managing Invoices', link: '/invoices/managing-invoices' },
-          ],
-        },
-        {
-          label: 'Booking Form',
-          items: [
-            { label: 'Overview', link: '/booking-form/overview' },
-            { label: 'Transfer Bookings', link: '/booking-form/transfers' },
-            { label: 'Tour Enquiries', link: '/booking-form/tours' },
-            { label: 'Multi-Language', link: '/booking-form/multi-language' },
-          ],
-        },
-      ],
-    }),
-  ],
-});
-```
 
 ---
 

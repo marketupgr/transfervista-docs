@@ -32,8 +32,8 @@ TransferVista uses two distinct geographic zone systems:
 | Page | File | Status | Description |
 |------|------|--------|-------------|
 | Introduction | `getting-started/introduction.md` | Done | Overview of TransferVista, key features, target audience |
-| Quick Start | `getting-started/quick-start.md` | Planned | 5-minute setup guide: create account, basic settings, first booking |
-| Dashboard Overview | `getting-started/dashboard-overview.md` | Planned | Understanding the Dashboard, performance metrics, assignments view |
+| Quick Start | `getting-started/quick-start.md` | Done | 5-minute setup guide: create account, basic settings, first booking |
+| Dashboard Overview | `getting-started/dashboard-overview.md` | Done | Understanding the Dashboard, performance metrics, assignments view |
 
 #### Content Requirements
 
@@ -43,19 +43,19 @@ TransferVista uses two distinct geographic zone systems:
 - [x] Target audience (transfer companies, tour operators)
 
 **Quick Start**
-- [ ] Account creation flow
-- [ ] Initial business setup (name, timezone, currency)
-- [ ] Adding first vehicle
-- [ ] Creating first service area
-- [ ] Setting up basic pricing
-- [ ] Receiving first booking
+- [x] Account creation flow
+- [x] Initial business setup (name, timezone, currency)
+- [x] Adding first vehicle
+- [x] Creating first service area
+- [x] Setting up basic pricing
+- [x] Receiving first booking
 
 **Dashboard Overview**
-- [ ] Performance metrics explained (Bookings, Revenue, New Customers)
-- [ ] Date range comparisons
-- [ ] Revenue chart interpretation
-- [ ] Assignments panel (Transfers, Tours, Previous Assignments)
-- [ ] Quick navigation links
+- [x] Performance metrics explained (Bookings, Revenue, New Customers)
+- [x] Date range comparisons
+- [x] Revenue chart interpretation
+- [x] Assignments panel (Transfers, Tours, Previous Assignments)
+- [x] Quick navigation links
 
 ---
 
@@ -63,11 +63,9 @@ TransferVista uses two distinct geographic zone systems:
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
-| Overview | `bookings/overview.md` | Planned | Bookings list and filtering |
-| Transfers | `bookings/transfers.md` | Planned | Transfer booking management |
-| Tours | `bookings/tours.md` | Planned | Tour booking management |
+| Overview | `bookings/overview.md` | Done | Bookings list and filtering |
 | Calendar | `bookings/calendar.md` | Planned | Calendar view navigation |
-| Booking Details | `bookings/booking-details.md` | Planned | Individual booking view |
+| Booking Details | `bookings/booking-details.md` | Done | Individual booking view |
 | Status Workflow | `bookings/status-workflow.md` | Planned | Lifecycle management |
 | Assigning Operators | `bookings/assigning-operators.md` | Planned | Driver assignment |
 | Payments | `bookings/payments.md` | Planned | Payment handling |
@@ -75,31 +73,14 @@ TransferVista uses two distinct geographic zone systems:
 #### Content Requirements
 
 **Overview**
-- [ ] Bookings table columns:
-  - [ ] Ref, Status, Booked at, Pickup at
-  - [ ] Customer, Operator, Flight/Ferry
-  - [ ] From, Destination, Distance
-  - [ ] Pay on Arrival, Total, Origin
-- [ ] Status filters (All, Accepted, Assigned, Picked up, Completed, Cancelled)
-- [ ] Search and sorting
-- [ ] Pagination
-
-**Transfers**
-- [ ] Transfer booking creation (manual)
-- [ ] Required fields
-- [ ] Optional fields
-- [ ] Return trip handling
-- [ ] Flight/ferry information
-- [ ] Special requests
-- [ ] Complimentary bookings:
-  - [ ] Creating free/complimentary transfers
-  - [ ] Complimentary reason field (required)
-
-**Tours**
-- [ ] Tour booking creation
-- [ ] Tour name selection
-- [ ] Tour-specific fields
-- [ ] Enquiry vs confirmed booking
+- [x] Bookings table columns:
+  - [x] Ref, Status, Booked at, Pickup at
+  - [x] Customer, Operator, Flight/Ferry
+  - [x] From, Destination, Distance
+  - [x] Pay on Arrival, Total, Origin
+- [x] Status filters (All, Accepted, Assigned, Picked up, Completed, Cancelled)
+- [x] Search and sorting
+- [x] Pagination
 
 **Calendar**
 - [ ] Week view navigation
@@ -110,20 +91,20 @@ TransferVista uses two distinct geographic zone systems:
 - [ ] Click-through to booking details
 
 **Booking Details**
-- [ ] Booking information sections:
-  - [ ] Transfer details
-  - [ ] Contact information
-  - [ ] Operator assignment
-  - [ ] Payment information
-  - [ ] Extras
-- [ ] Route map
-- [ ] Flight tracking (for airport pickups):
-  - [ ] Real-time flight status display
-  - [ ] ETA updates
-  - [ ] Delay notifications
-- [ ] Messages/notes
-- [ ] Session information
-- [ ] Edit capabilities
+- [x] Booking information sections:
+  - [x] Transfer details
+  - [x] Contact information
+  - [x] Operator assignment
+  - [x] Payment information
+  - [x] Extras
+- [x] Route map
+- [x] Flight tracking (for airport pickups):
+  - [x] Real-time flight status display
+  - [x] ETA updates
+  - [x] Delay notifications
+- [x] Messages/notes
+- [x] Session information
+- [x] Edit capabilities
 
 **Status Workflow**
 - [ ] Status definitions:

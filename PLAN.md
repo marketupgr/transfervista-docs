@@ -4,7 +4,7 @@ This document outlines the comprehensive documentation structure for TransferVis
 
 ## Overview
 
-- **Total Pages**: 43 documentation pages
+- **Total Pages**: 40 documentation pages
 - **Sections**: 13 main sections
 - **Platform**: Astro Starlight
 
@@ -99,6 +99,9 @@ TransferVista uses two distinct geographic zone systems:
 
 **Forms & Documents**
 - [ ] Transfer Voucher settings
+- [ ] Voucher display options:
+  - [ ] Show/hide payment method on voucher
+  - [ ] Show/hide price on voucher
 - [ ] Agreement/Consent text:
   - [ ] English version
   - [ ] Localized versions (Greek, Spanish, French, Italian, Turkish)
@@ -209,9 +212,7 @@ TransferVista uses two distinct geographic zone systems:
 |------|------|--------|-------------|
 | Overview | `availability/overview.md` | Planned | Understanding availability configuration |
 | Zones | `availability/zones.md` | Planned | Geographic zones where transfers are available |
-| Closed Hours | `availability/closed-hours.md` | Planned | Blocking time windows |
-| Availability Rules | `availability/rules.md` | Planned | Recurring availability patterns |
-| Exceptions | `availability/exceptions.md` | Planned | Date-specific blocks |
+| Rules & Scheduling | `availability/rules-scheduling.md` | Planned | Availability rules, closed hours, and date exceptions |
 
 #### Content Requirements
 
@@ -222,7 +223,6 @@ TransferVista uses two distinct geographic zone systems:
 - [ ] Understanding the availability system
 - [ ] Difference between Availability Zones and Pricing Areas
 - [ ] How availability rules are evaluated
-- [ ] Order of precedence (Zones → Rules → Exceptions → Closed Hours)
 - [ ] Impact on customer booking form
 
 **Availability Zones**
@@ -232,13 +232,14 @@ TransferVista uses two distinct geographic zone systems:
 - [ ] Understanding Availability Zones vs Pricing Areas:
   - [ ] Availability Zones: Where you offer service
   - [ ] Pricing Areas: How you calculate prices
+- [ ] Zone types:
+  - [ ] **Full Service**: Routes can start, end, or be entirely within the zone (e.g., hotel-to-hotel within city)
+  - [ ] **Cross Zone Only**: Routes must cross into another zone - both pickup and dropoff cannot be in the same zone (e.g., airport zone where transfers must go to/from another area)
 - [ ] Creating availability zones:
   - [ ] Interactive map interface
   - [ ] Drawing zone boundaries (polygon tool)
   - [ ] Zone naming
-- [ ] Zone configuration options:
-  - [ ] Enable/disable zones
-  - [ ] Zone-specific rules
+  - [ ] Selecting zone type (Full Service or Cross Zone Only)
 - [ ] Multiple zone management
 - [ ] Editing zone boundaries
 - [ ] Deleting zones
@@ -246,59 +247,45 @@ TransferVista uses two distinct geographic zone systems:
   - [ ] Location validation
   - [ ] "Service not available" messages
 
-**Closed Hours**
-- [ ] Purpose of closed hours
-- [ ] Creating closed hour windows:
-  - [ ] Start time
-  - [ ] End time
-  - [ ] Days of week
-- [ ] Pickup cutoff times:
-  - [ ] Minimum notice period
-  - [ ] Cutoff before closed period
-- [ ] Use cases:
-  - [ ] Night hours
-  - [ ] Lunch breaks
-  - [ ] Office hours only
-- [ ] Recurring vs one-time closures
-- [ ] How closed hours display to customers
+**Rules & Scheduling**
 
-**Availability Rules**
+This page covers three related features for controlling when bookings can be made:
+
+*Availability Rules*
 - [ ] Understanding availability rules
 - [ ] Rule configuration options:
   - [ ] Day of week selection (Mon-Sun)
   - [ ] Month selection (Jan-Dec)
   - [ ] Time range (start time - end time)
-  - [ ] Advance booking requirements
-- [ ] Advance booking settings:
-  - [ ] Minimum notice period (hours/days)
-  - [ ] Maximum advance booking (days/weeks)
-- [ ] Rule combinations:
-  - [ ] Multiple rules stacking
-  - [ ] Rule priority
+  - [ ] Advance booking margin (minimum notice period)
+- [ ] Rule description field
 - [ ] Seasonal availability:
   - [ ] Summer/winter schedules
   - [ ] Holiday periods
-- [ ] Testing rules on booking form
+- [ ] Creating, editing, and deleting rules
 
-**Exceptions**
-- [ ] Purpose of exceptions
-- [ ] Creating exception dates:
-  - [ ] Single date selection
-  - [ ] Date range selection
-  - [ ] Bulk date selection
-- [ ] Exception types:
-  - [ ] Fully closed (no bookings)
-  - [ ] Modified hours (custom times)
+*Closed Hours*
+- [ ] Purpose of closed hours
+- [ ] Enabling closed hours
+- [ ] Configuration:
+  - [ ] Start time (when closed period begins)
+  - [ ] End time (when closed period ends)
+  - [ ] Pickup cutoff (earliest allowed pickup time for bookings made during closed hours)
+- [ ] Example: If closed hours are 22:00-06:00 with an 08:00 cutoff, a customer booking at 23:00 can only schedule a pickup for 08:00 or later
+- [ ] Use cases:
+  - [ ] Night hours
+  - [ ] Office hours only
+
+*Unavailable Dates (Exceptions)*
+- [ ] Purpose of date exceptions
+- [ ] Adding unavailable dates:
+  - [ ] Date picker calendar
+  - [ ] Selecting specific dates
 - [ ] Common use cases:
   - [ ] Public holidays
   - [ ] Company holidays
   - [ ] Special events
-  - [ ] Maintenance periods
-- [ ] Exception override behavior:
-  - [ ] How exceptions interact with rules
-  - [ ] Priority over regular availability
-- [ ] Recurring annual exceptions (e.g., Christmas)
-- [ ] Managing exception calendar
+- [ ] Removing unavailable dates
 
 ---
 
@@ -334,6 +321,9 @@ TransferVista uses two distinct geographic zone systems:
 - [ ] Return trip handling
 - [ ] Flight/ferry information
 - [ ] Special requests
+- [ ] Complimentary bookings:
+  - [ ] Creating free/complimentary transfers
+  - [ ] Complimentary reason field (required)
 
 **Tours**
 - [ ] Tour booking creation
@@ -357,6 +347,10 @@ TransferVista uses two distinct geographic zone systems:
   - [ ] Payment information
   - [ ] Extras
 - [ ] Route map
+- [ ] Flight tracking (for airport pickups):
+  - [ ] Real-time flight status display
+  - [ ] ETA updates
+  - [ ] Delay notifications
 - [ ] Messages/notes
 - [ ] Session information
 - [ ] Edit capabilities
@@ -411,10 +405,14 @@ TransferVista uses two distinct geographic zone systems:
 
 ### 7. Team Management
 
+> **Note**: Operators are the people or businesses who fulfill transfer bookings. There are two types:
+> - **Drivers**: Individual operators, either company staff or freelancers
+> - **Partners**: External businesses that can be assigned transfers (see Partners section)
+
 | Page | File | Status | Description |
 |------|------|--------|-------------|
 | Members | `team/members.md` | Planned | Team member roles |
-| Operators | `team/operators.md` | Planned | Driver management |
+| Drivers | `team/drivers.md` | Planned | Driver management |
 
 #### Content Requirements
 
@@ -429,15 +427,15 @@ TransferVista uses two distinct geographic zone systems:
 - [ ] Removing members
 - [ ] Member list management
 
-**Operators**
-- [ ] Adding operators/drivers
-- [ ] Operator profile:
+**Drivers**
+- [ ] Adding drivers
+- [ ] Driver profile:
   - [ ] Photo upload
   - [ ] Name
   - [ ] Phone number
   - [ ] Commission percentage
 - [ ] Commission fee calculation
-- [ ] Operator availability
+- [ ] Driver availability
 - [ ] Performance tracking
 
 ---
@@ -578,7 +576,6 @@ TransferVista uses two distinct geographic zone systems:
   - [ ] Percentage discount
   - [ ] Fixed amount discount
 - [ ] Expiration date setting
-- [ ] Usage limits (if applicable)
 - [ ] Coupon tracking
 - [ ] Deactivating coupons
 
@@ -614,7 +611,6 @@ TransferVista uses two distinct geographic zone systems:
   - [ ] Date/time sent
 - [ ] Filtering and sorting
 - [ ] Email delivery troubleshooting
-- [ ] Resending failed emails (if applicable)
 
 ---
 
@@ -633,8 +629,16 @@ TransferVista uses two distinct geographic zone systems:
   - [ ] Bookings by Partner
 - [ ] Date range selection
 - [ ] Report generation process
-- [ ] Export formats
-- [ ] Report interpretation
+- [ ] Report metrics displayed:
+  - [ ] Total bookings
+  - [ ] Total revenue
+  - [ ] Average booking value
+  - [ ] Total distance (for operator reports)
+  - [ ] Commission/fees breakdown
+- [ ] Detailed statistics per operator/partner
+- [ ] Creating invoices directly from reports:
+  - [ ] Generate invoice for operator/driver commission
+  - [ ] Pre-filled invoice with booking period details
 
 **Managing Invoices**
 - [ ] Invoice table columns:
@@ -750,9 +754,7 @@ export default defineConfig({
           items: [
             { label: 'Overview', link: '/availability/overview' },
             { label: 'Zones', link: '/availability/zones' },
-            { label: 'Closed Hours', link: '/availability/closed-hours' },
-            { label: 'Availability Rules', link: '/availability/rules' },
-            { label: 'Exceptions', link: '/availability/exceptions' },
+            { label: 'Rules & Scheduling', link: '/availability/rules-scheduling' },
           ],
         },
         {
@@ -778,7 +780,7 @@ export default defineConfig({
           label: 'Team Management',
           items: [
             { label: 'Members', link: '/team/members' },
-            { label: 'Operators', link: '/team/operators' },
+            { label: 'Drivers', link: '/team/drivers' },
           ],
         },
         {

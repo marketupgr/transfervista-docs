@@ -22,3 +22,6 @@ such as the pickup location and time, status, and customer information.
 Pressing on an assignment opens up the detailed view of that specific transfer booking,
 where the operator can see all relevant information and take necessary actions, such as marking
 the transfer as picked up or completed.
+
+To learn more about the driver's workflow, refer to the
+[Driver Experience Guide](/docs/en/drivers/overview).

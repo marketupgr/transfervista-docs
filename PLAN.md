@@ -4,8 +4,8 @@ This document outlines the comprehensive documentation structure for TransferVis
 
 ## Overview
 
-- **Total Pages**: 40 documentation pages
-- **Sections**: 13 main sections
+- **Total Pages**: 46 documentation pages
+- **Sections**: 14 main sections
 - **Platform**: Astro Starlight
 
 ---
@@ -60,236 +60,7 @@ TransferVista uses two distinct geographic zone systems:
 
 ---
 
-### 2. Settings & Configuration
-
-| Page | File | Status | Description |
-|------|------|--------|-------------|
-| General | `settings/general.md` | Planned | Business name, subdomain, timezone, language, currency, support info |
-| Bookings | `settings/bookings.md` | Planned | Reference prefixes, payment methods, pricing rules |
-| Forms & Documents | `settings/forms-documents.md` | Planned | Vouchers, agreements, signatures, invoices |
-| Branding | `settings/branding.md` | Planned | Logo, colors, visual identity |
-| Permissions | `settings/permissions.md` | Planned | Role-based access for drivers |
-| Integrations | `settings/integrations.md` | Planned | Third-party service connections |
-
-#### Content Requirements
-
-**General Settings**
-- [ ] Business name configuration
-- [ ] Subdomain setup (note: contact support to change)
-- [ ] Timezone selection and importance
-- [ ] Default language for booking form
-- [ ] Currency selection (note: doesn't convert existing prices)
-- [ ] Terms and Conditions URL
-- [ ] Privacy Policy URL
-- [ ] Support website/email/phone
-- [ ] Review link (for completed booking emails)
-
-**Bookings Settings**
-- [ ] Transfer reference prefix (e.g., TRF)
-- [ ] Tour reference prefix (e.g., TOU)
-- [ ] Return URL configuration
-- [ ] Minimum distance settings
-- [ ] Minimum duration settings
-- [ ] Return trip discount percentage
-- [ ] Payment methods:
-  - [ ] Pay on arrival
-  - [ ] Online payment (Stripe)
-  - [ ] Deposit percentage
-- [ ] Price rounding options
-
-**Forms & Documents**
-- [ ] Transfer Voucher settings
-- [ ] Voucher display options:
-  - [ ] Show/hide payment method on voucher
-  - [ ] Show/hide price on voucher
-- [ ] Agreement/Consent text:
-  - [ ] English version
-  - [ ] Localized versions (Greek, Spanish, French, Italian, Turkish)
-- [ ] Signature image upload
-- [ ] Invoice customization
-- [ ] Code/template editing
-
-**Branding**
-- [ ] Logo upload requirements (dimensions, format)
-- [ ] Brand color picker
-- [ ] Base colors configuration
-- [ ] Text color settings
-- [ ] Preview on booking form
-
-**Permissions**
-- [ ] Driver role permissions:
-  - [ ] See price toggle
-  - [ ] See commission toggle
-- [ ] Permission inheritance explanation
-
-**Integrations**
-- [ ] Stripe setup:
-  - [ ] Account connection
-  - [ ] Payment processing flow
-  - [ ] Webhook configuration
-- [ ] Google Calendar:
-  - [ ] OAuth connection
-  - [ ] Sync settings
-  - [ ] Event creation
-- [ ] Google Analytics:
-  - [ ] Tracking ID setup
-  - [ ] Events tracked
-- [ ] Google Ads:
-  - [ ] Conversion tracking
-  - [ ] Tag configuration
-
----
-
-### 3. Catalog Management
-
-| Page | File | Status | Description |
-|------|------|--------|-------------|
-| Vehicles | `catalog/vehicles.md` | Planned | Fleet management |
-| Areas | `catalog/areas.md` | Planned | Pricing zones for route-based pricing |
-| Price Lists | `catalog/price-lists.md` | Planned | Pricing configuration |
-| Extras | `catalog/extras.md` | Planned | Add-on services |
-
-#### Content Requirements
-
-**Vehicles**
-- [ ] Adding a new vehicle
-- [ ] Vehicle image upload
-- [ ] Title/name configuration
-- [ ] Passenger capacity setting
-- [ ] Luggage capacity setting
-- [ ] Editing existing vehicles
-- [ ] Deleting vehicles
-- [ ] Vehicle display on booking form
-
-**Areas (Pricing Zones)**
-
-> **Note**: Areas are used for **pricing rules** - they define geographic zones that are referenced in price lists to calculate route-based pricing. Areas are different from Availability Zones (see Section 4).
-
-- [ ] Understanding Areas vs Availability Zones
-- [ ] Interactive map interface
-- [ ] Creating pricing areas:
-  - [ ] Polygon drawing tool
-  - [ ] Area naming conventions
-- [ ] Location types:
-  - [ ] Airport
-  - [ ] Port
-  - [ ] Hotel
-  - [ ] Other
-- [ ] How Areas connect to Price Lists
-- [ ] Area-to-Area pricing (origin → destination)
-- [ ] Editing area boundaries
-- [ ] Deleting areas
-- [ ] Area overlap handling and priority
-
-**Price Lists**
-- [ ] Base price list vs Partner price lists
-- [ ] Creating a new price list
-- [ ] Pricing dimensions:
-  - [ ] By route (Area → Area)
-  - [ ] By group/zone
-  - [ ] By vehicle type
-  - [ ] By time of day
-  - [ ] By kilometer
-  - [ ] EUR per KM rates
-  - [ ] Flat price option
-- [ ] Discount configuration
-- [ ] Assigning price lists to partners
-- [ ] Price list priority/fallback
-- [ ] Relationship between Areas and pricing rules
-
-**Extras**
-- [ ] Creating extra services (e.g., child seat, meet & greet)
-- [ ] Extra pricing
-- [ ] Availability per vehicle type
-- [ ] Display on booking form
-- [ ] Extras in booking details
-
----
-
-### 4. Availability
-
-| Page | File | Status | Description |
-|------|------|--------|-------------|
-| Overview | `availability/overview.md` | Planned | Understanding availability configuration |
-| Zones | `availability/zones.md` | Planned | Geographic zones where transfers are available |
-| Rules & Scheduling | `availability/rules-scheduling.md` | Planned | Availability rules, closed hours, and date exceptions |
-
-#### Content Requirements
-
-**Overview**
-
-> **Important**: Availability settings control **when** and **where** customers can book transfers. This is separate from pricing configuration (see Catalog > Areas).
-
-- [ ] Understanding the availability system
-- [ ] Difference between Availability Zones and Pricing Areas
-- [ ] How availability rules are evaluated
-- [ ] Impact on customer booking form
-
-**Availability Zones**
-
-> **Note**: Availability Zones define the **geographic boundaries** where your transfer service operates. These are different from Catalog Areas which are used for pricing.
-
-- [ ] Understanding Availability Zones vs Pricing Areas:
-  - [ ] Availability Zones: Where you offer service
-  - [ ] Pricing Areas: How you calculate prices
-- [ ] Zone types:
-  - [ ] **Full Service**: Routes can start, end, or be entirely within the zone (e.g., hotel-to-hotel within city)
-  - [ ] **Cross Zone Only**: Routes must cross into another zone - both pickup and dropoff cannot be in the same zone (e.g., airport zone where transfers must go to/from another area)
-- [ ] Creating availability zones:
-  - [ ] Interactive map interface
-  - [ ] Drawing zone boundaries (polygon tool)
-  - [ ] Zone naming
-  - [ ] Selecting zone type (Full Service or Cross Zone Only)
-- [ ] Multiple zone management
-- [ ] Editing zone boundaries
-- [ ] Deleting zones
-- [ ] How zones affect the booking form:
-  - [ ] Location validation
-  - [ ] "Service not available" messages
-
-**Rules & Scheduling**
-
-This page covers three related features for controlling when bookings can be made:
-
-*Availability Rules*
-- [ ] Understanding availability rules
-- [ ] Rule configuration options:
-  - [ ] Day of week selection (Mon-Sun)
-  - [ ] Month selection (Jan-Dec)
-  - [ ] Time range (start time - end time)
-  - [ ] Advance booking margin (minimum notice period)
-- [ ] Rule description field
-- [ ] Seasonal availability:
-  - [ ] Summer/winter schedules
-  - [ ] Holiday periods
-- [ ] Creating, editing, and deleting rules
-
-*Closed Hours*
-- [ ] Purpose of closed hours
-- [ ] Enabling closed hours
-- [ ] Configuration:
-  - [ ] Start time (when closed period begins)
-  - [ ] End time (when closed period ends)
-  - [ ] Pickup cutoff (earliest allowed pickup time for bookings made during closed hours)
-- [ ] Example: If closed hours are 22:00-06:00 with an 08:00 cutoff, a customer booking at 23:00 can only schedule a pickup for 08:00 or later
-- [ ] Use cases:
-  - [ ] Night hours
-  - [ ] Office hours only
-
-*Unavailable Dates (Exceptions)*
-- [ ] Purpose of date exceptions
-- [ ] Adding unavailable dates:
-  - [ ] Date picker calendar
-  - [ ] Selecting specific dates
-- [ ] Common use cases:
-  - [ ] Public holidays
-  - [ ] Company holidays
-  - [ ] Special events
-- [ ] Removing unavailable dates
-
----
-
-### 5. Managing Bookings
+### 2. Managing Bookings
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
@@ -383,7 +154,288 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 6. Customers
+### 3. Driver Experience
+
+> **Note**: This section covers the driver's perspective when using TransferVista. Drivers log in to view their assignments and manage booking statuses.
+
+| Page | File | Status | Description |
+|------|------|--------|-------------|
+| Overview | `drivers/overview.md` | Planned | Introduction to the driver interface |
+| Viewing Assignments | `drivers/viewing-assignments.md` | Planned | How drivers see and access their assigned bookings |
+| Managing Bookings | `drivers/managing-bookings.md` | Planned | Updating booking status and completing transfers |
+
+#### Content Requirements
+
+**Overview**
+- [ ] What drivers see when they log in
+- [ ] Driver dashboard layout
+- [ ] Navigation for drivers
+- [ ] Mobile-friendly interface notes
+- [ ] Driver role permissions (what they can/cannot access)
+
+**Viewing Assignments**
+- [ ] Assignments list/panel
+- [ ] Filtering by date (today, upcoming, past)
+- [ ] Assignment details visible to drivers:
+  - [ ] Pickup location and address
+  - [ ] Drop-off location and address
+  - [ ] Pickup date and time
+  - [ ] Customer name
+  - [ ] Customer phone number
+  - [ ] Number of passengers
+  - [ ] Luggage count
+  - [ ] Vehicle assigned
+  - [ ] Special instructions/notes
+  - [ ] Flight/ferry details (if applicable)
+- [ ] Viewing route on map
+- [ ] Accessing customer contact information
+- [ ] Price visibility (based on permissions)
+- [ ] Commission visibility (based on permissions)
+
+**Managing Bookings**
+- [ ] Updating booking status:
+  - [ ] Marking as "Picked Up" when customer is collected
+  - [ ] Marking as "Completed" when journey is finished
+- [ ] Status update workflow
+- [ ] Confirmation prompts
+- [ ] What happens after status change:
+  - [ ] Notifications sent to customer/manager
+  - [ ] Booking moves to completed list
+- [ ] Viewing completed/past assignments
+- [ ] Notes or issues reporting (if applicable)
+
+---
+
+### 4. Settings & Configuration
+
+| Page | File | Status | Description |
+|------|------|--------|-------------|
+| General | `settings/general.md` | Planned | Business name, subdomain, timezone, language, currency, support info |
+| Bookings | `settings/bookings.md` | Planned | Reference prefixes, payment methods, pricing rules |
+| Forms & Documents | `settings/forms-documents.md` | Planned | Vouchers, agreements, signatures, invoices |
+| Branding | `settings/branding.md` | Planned | Logo, colors, visual identity |
+| Permissions | `settings/permissions.md` | Planned | Role-based access for drivers |
+| Integrations | `settings/integrations.md` | Planned | Third-party service connections |
+
+#### Content Requirements
+
+**General Settings**
+- [ ] Business name configuration
+- [ ] Subdomain setup (note: contact support to change)
+- [ ] Timezone selection and importance
+- [ ] Default language for booking form
+- [ ] Currency selection (note: doesn't convert existing prices)
+- [ ] Terms and Conditions URL
+- [ ] Privacy Policy URL
+- [ ] Support website/email/phone
+- [ ] Review link (for completed booking emails)
+
+**Bookings Settings**
+- [ ] Transfer reference prefix (e.g., TRF)
+- [ ] Tour reference prefix (e.g., TOU)
+- [ ] Return URL configuration
+- [ ] Minimum distance settings
+- [ ] Minimum duration settings
+- [ ] Return trip discount percentage
+- [ ] Payment methods:
+  - [ ] Pay on arrival
+  - [ ] Online payment (Stripe)
+  - [ ] Deposit percentage
+- [ ] Price rounding options
+
+**Forms & Documents**
+- [ ] Transfer Voucher settings
+- [ ] Voucher display options:
+  - [ ] Show/hide payment method on voucher
+  - [ ] Show/hide price on voucher
+- [ ] Agreement/Consent text:
+  - [ ] English version
+  - [ ] Localized versions (Greek, Spanish, French, Italian, Turkish)
+- [ ] Signature image upload
+- [ ] Invoice customization
+- [ ] Code/template editing
+
+**Branding**
+- [ ] Logo upload requirements (dimensions, format)
+- [ ] Brand color picker
+- [ ] Base colors configuration
+- [ ] Text color settings
+- [ ] Preview on booking form
+
+**Permissions**
+- [ ] Driver role permissions:
+  - [ ] See price toggle
+  - [ ] See commission toggle
+- [ ] Permission inheritance explanation
+
+**Integrations**
+- [ ] Stripe setup:
+  - [ ] Account connection
+  - [ ] Payment processing flow
+  - [ ] Webhook configuration
+- [ ] Google Calendar:
+  - [ ] OAuth connection
+  - [ ] Sync settings
+  - [ ] Event creation
+- [ ] Google Analytics:
+  - [ ] Tracking ID setup
+  - [ ] Events tracked
+- [ ] Google Ads:
+  - [ ] Conversion tracking
+  - [ ] Tag configuration
+
+---
+
+### 5. Catalog Management
+
+| Page | File | Status | Description |
+|------|------|--------|-------------|
+| Vehicles | `catalog/vehicles.md` | Planned | Fleet management |
+| Areas | `catalog/areas.md` | Planned | Pricing zones for route-based pricing |
+| Price Lists | `catalog/price-lists.md` | Planned | Pricing configuration |
+| Extras | `catalog/extras.md` | Planned | Add-on services |
+
+#### Content Requirements
+
+**Vehicles**
+- [ ] Adding a new vehicle
+- [ ] Vehicle image upload
+- [ ] Title/name configuration
+- [ ] Passenger capacity setting
+- [ ] Luggage capacity setting
+- [ ] Editing existing vehicles
+- [ ] Deleting vehicles
+- [ ] Vehicle display on booking form
+
+**Areas (Pricing Zones)**
+
+> **Note**: Areas are used for **pricing rules** - they define geographic zones that are referenced in price lists to calculate route-based pricing. Areas are different from Availability Zones (see Section 4).
+
+- [ ] Understanding Areas vs Availability Zones
+- [ ] Interactive map interface
+- [ ] Creating pricing areas:
+  - [ ] Polygon drawing tool
+  - [ ] Area naming conventions
+- [ ] Location types:
+  - [ ] Airport
+  - [ ] Port
+  - [ ] Hotel
+  - [ ] Other
+- [ ] How Areas connect to Price Lists
+- [ ] Area-to-Area pricing (origin → destination)
+- [ ] Editing area boundaries
+- [ ] Deleting areas
+- [ ] Area overlap handling and priority
+
+**Price Lists**
+- [ ] Base price list vs Partner price lists
+- [ ] Creating a new price list
+- [ ] Pricing dimensions:
+  - [ ] By route (Area → Area)
+  - [ ] By group/zone
+  - [ ] By vehicle type
+  - [ ] By time of day
+  - [ ] By kilometer
+  - [ ] EUR per KM rates
+  - [ ] Flat price option
+- [ ] Discount configuration
+- [ ] Assigning price lists to partners
+- [ ] Price list priority/fallback
+- [ ] Relationship between Areas and pricing rules
+
+**Extras**
+- [ ] Creating extra services (e.g., child seat, meet & greet)
+- [ ] Extra pricing
+- [ ] Availability per vehicle type
+- [ ] Display on booking form
+- [ ] Extras in booking details
+
+---
+
+### 6. Availability
+
+| Page | File | Status | Description |
+|------|------|--------|-------------|
+| Overview | `availability/overview.md` | Planned | Understanding availability configuration |
+| Zones | `availability/zones.md` | Planned | Geographic zones where transfers are available |
+| Rules & Scheduling | `availability/rules-scheduling.md` | Planned | Availability rules, closed hours, and date exceptions |
+
+#### Content Requirements
+
+**Overview**
+
+> **Important**: Availability settings control **when** and **where** customers can book transfers. This is separate from pricing configuration (see Catalog > Areas).
+
+- [ ] Understanding the availability system
+- [ ] Difference between Availability Zones and Pricing Areas
+- [ ] How availability rules are evaluated
+- [ ] Impact on customer booking form
+
+**Availability Zones**
+
+> **Note**: Availability Zones define the **geographic boundaries** where your transfer service operates. These are different from Catalog Areas which are used for pricing.
+
+- [ ] Understanding Availability Zones vs Pricing Areas:
+  - [ ] Availability Zones: Where you offer service
+  - [ ] Pricing Areas: How you calculate prices
+- [ ] Zone types:
+  - [ ] **Full Service**: Routes can start, end, or be entirely within the zone (e.g., hotel-to-hotel within city)
+  - [ ] **Cross Zone Only**: Routes must cross into another zone - both pickup and dropoff cannot be in the same zone (e.g., airport zone where transfers must go to/from another area)
+- [ ] Creating availability zones:
+  - [ ] Interactive map interface
+  - [ ] Drawing zone boundaries (polygon tool)
+  - [ ] Zone naming
+  - [ ] Selecting zone type (Full Service or Cross Zone Only)
+- [ ] Multiple zone management
+- [ ] Editing zone boundaries
+- [ ] Deleting zones
+- [ ] How zones affect the booking form:
+  - [ ] Location validation
+  - [ ] "Service not available" messages
+
+**Rules & Scheduling**
+
+This page covers three related features for controlling when bookings can be made:
+
+*Availability Rules*
+- [ ] Understanding availability rules
+- [ ] Rule configuration options:
+  - [ ] Day of week selection (Mon-Sun)
+  - [ ] Month selection (Jan-Dec)
+  - [ ] Time range (start time - end time)
+  - [ ] Advance booking margin (minimum notice period)
+- [ ] Rule description field
+- [ ] Seasonal availability:
+  - [ ] Summer/winter schedules
+  - [ ] Holiday periods
+- [ ] Creating, editing, and deleting rules
+
+*Closed Hours*
+- [ ] Purpose of closed hours
+- [ ] Enabling closed hours
+- [ ] Configuration:
+  - [ ] Start time (when closed period begins)
+  - [ ] End time (when closed period ends)
+  - [ ] Pickup cutoff (earliest allowed pickup time for bookings made during closed hours)
+- [ ] Example: If closed hours are 22:00-06:00 with an 08:00 cutoff, a customer booking at 23:00 can only schedule a pickup for 08:00 or later
+- [ ] Use cases:
+  - [ ] Night hours
+  - [ ] Office hours only
+
+*Unavailable Dates (Exceptions)*
+- [ ] Purpose of date exceptions
+- [ ] Adding unavailable dates:
+  - [ ] Date picker calendar
+  - [ ] Selecting specific dates
+- [ ] Common use cases:
+  - [ ] Public holidays
+  - [ ] Company holidays
+  - [ ] Special events
+- [ ] Removing unavailable dates
+
+---
+
+### 7. Customers
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
@@ -403,7 +455,7 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 7. Team Management
+### 8. Team Management
 
 > **Note**: Operators are the people or businesses who fulfill transfer bookings. There are two types:
 > - **Drivers**: Individual operators, either company staff or freelancers
@@ -440,7 +492,7 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 8. Partners
+### 9. Partners
 
 > **Note**: Partners are external business entities that work with your transfer company. There are two types of partners: **Booking Partners** (who can create bookings on behalf of customers with commission) and **Transfer Operator Partners** (who can be assigned to fulfill transfer bookings).
 
@@ -534,7 +586,7 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 9. Tours `Add-on`
+### 10. Tours `Add-on`
 
 > **Note**: Tours is an add-on feature that must be enabled separately.
 
@@ -562,7 +614,7 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 10. Coupons & Discounts
+### 11. Coupons & Discounts
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
@@ -581,7 +633,7 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 11. Communications
+### 12. Communications
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
@@ -614,7 +666,7 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 12. Reports & Invoices
+### 13. Reports & Invoices
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
@@ -654,7 +706,7 @@ This page covers three related features for controlling when bookings can be mad
 
 ---
 
-### 13. Customer Booking Form
+### 14. Customer Booking Form
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
@@ -730,6 +782,27 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Bookings',
+          items: [
+            { label: 'Overview', link: '/bookings/overview' },
+            { label: 'Transfers', link: '/bookings/transfers' },
+            { label: 'Tours', link: '/bookings/tours' },
+            { label: 'Calendar View', link: '/bookings/calendar' },
+            { label: 'Booking Details', link: '/bookings/booking-details' },
+            { label: 'Status Workflow', link: '/bookings/status-workflow' },
+            { label: 'Assigning Operators', link: '/bookings/assigning-operators' },
+            { label: 'Payments', link: '/bookings/payments' },
+          ],
+        },
+        {
+          label: 'Driver Experience',
+          items: [
+            { label: 'Overview', link: '/drivers/overview' },
+            { label: 'Viewing Assignments', link: '/drivers/viewing-assignments' },
+            { label: 'Managing Bookings', link: '/drivers/managing-bookings' },
+          ],
+        },
+        {
           label: 'Settings',
           items: [
             { label: 'General', link: '/settings/general' },
@@ -755,19 +828,6 @@ export default defineConfig({
             { label: 'Overview', link: '/availability/overview' },
             { label: 'Zones', link: '/availability/zones' },
             { label: 'Rules & Scheduling', link: '/availability/rules-scheduling' },
-          ],
-        },
-        {
-          label: 'Bookings',
-          items: [
-            { label: 'Overview', link: '/bookings/overview' },
-            { label: 'Transfers', link: '/bookings/transfers' },
-            { label: 'Tours', link: '/bookings/tours' },
-            { label: 'Calendar View', link: '/bookings/calendar' },
-            { label: 'Booking Details', link: '/bookings/booking-details' },
-            { label: 'Status Workflow', link: '/bookings/status-workflow' },
-            { label: 'Assigning Operators', link: '/bookings/assigning-operators' },
-            { label: 'Payments', link: '/bookings/payments' },
           ],
         },
         {

@@ -48,6 +48,27 @@ export default defineConfig({
           ],
         },
         {
+          label: "Bookings",
+          items: [
+            { label: "Overview", slug: "bookings/overview" },
+            { label: "Transfers", slug: "bookings/transfers" },
+            { label: "Tours", slug: "bookings/tours" },
+            { label: "Calendar View", slug: "bookings/calendar" },
+            { label: "Booking Details", slug: "bookings/booking-details" },
+            { label: "Status Workflow", slug: "bookings/status-workflow" },
+            { label: "Assigning Operators", slug: "bookings/assigning-operators" },
+            { label: "Payments", slug: "bookings/payments" },
+          ],
+        },
+        {
+          label: "Driver Experience",
+          items: [
+            { label: "Overview", slug: "drivers/overview" },
+            { label: "Viewing Assignments", slug: "drivers/viewing-assignments" },
+            { label: "Managing Bookings", slug: "drivers/managing-bookings" },
+          ],
+        },
+        {
           label: "Settings",
           items: [
             { label: "General", slug: "settings/general" },
@@ -73,19 +94,6 @@ export default defineConfig({
             { label: "Overview", slug: "availability/overview" },
             { label: "Zones", slug: "availability/zones" },
             { label: "Rules & Scheduling", slug: "availability/rules-scheduling" },
-          ],
-        },
-        {
-          label: "Bookings",
-          items: [
-            { label: "Overview", slug: "bookings/overview" },
-            { label: "Transfers", slug: "bookings/transfers" },
-            { label: "Tours", slug: "bookings/tours" },
-            { label: "Calendar View", slug: "bookings/calendar" },
-            { label: "Booking Details", slug: "bookings/booking-details" },
-            { label: "Status Workflow", slug: "bookings/status-workflow" },
-            { label: "Assigning Operators", slug: "bookings/assigning-operators" },
-            { label: "Payments", slug: "bookings/payments" },
           ],
         },
         {

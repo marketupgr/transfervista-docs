@@ -67,7 +67,7 @@ TransferVista uses two distinct geographic zone systems:
 | Calendar | `bookings/calendar.md` | Planned | Calendar view navigation |
 | Booking Details | `bookings/booking-details.md` | Done | Individual booking view |
 | Status Workflow | `bookings/status-workflow.md` | Planned | Lifecycle management |
-| Assigning Operators | `bookings/assigning-operators.md` | Planned | Driver assignment |
+| Assigning Operators | `bookings/assigning-operators.md` | Done | Driver assignment |
 | Payments | `bookings/payments.md` | Planned | Payment handling |
 
 #### Content Requirements
@@ -118,11 +118,11 @@ TransferVista uses two distinct geographic zone systems:
 - [ ] Automatic vs manual transitions
 
 **Assigning Operators**
-- [ ] Operator selection dropdown
-- [ ] Commission visibility
-- [ ] Assignment notifications
-- [ ] Reassignment process
-- [ ] Unassigning operators
+- [x] Operator selection dropdown
+- [x] Commission visibility
+- [x] Assignment notifications
+- [x] Reassignment process
+- [x] Unassigning operators
 
 **Payments**
 - [ ] Payment method display

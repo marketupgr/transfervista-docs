@@ -1,4 +1,102 @@
 ---
 title: Areas
-description: Define pricing zones for route-based pricing calculations
+description: Define notable locations for pricing rules and booking form display
 ---
+
+To access Areas, go to **Catalog** in the sidebar and select the **Areas** tab.
+
+Areas are notable locations that your transfer company wants to highlight. They serve two purposes:
+
+1. **Pricing rules** - Areas can be attached to price lists to apply special pricing for routes to or from specific locations
+2. **Booking form display** - Areas can appear as selectable options in the booking form address picker, making it easier for customers to select common destinations
+
+## Understanding Areas
+
+Unlike the address autocomplete which lets customers type any address, Areas are predefined locations
+you define by drawing zones on a map. When a customer's pickup or drop-off falls within an Area,
+you can apply specific pricing rules through your [Price Lists](/docs/en/catalog/03-price-lists).
+
+**Common use cases:**
+- Airports, ports, or ferry terminals
+- Hotels, resorts
+- City centers with zone-based pricing
+
+:::tip
+Areas are different from [Availability Zones](/docs/en/availability/02-zones). While Areas define
+locations for pricing, Availability Zones define where transfer services are offered. A transfer
+company typically has fewer Availability Zones than Areas.
+:::
+
+## Creating an Area
+
+1. Use the **Search** field to find your location on the map
+1. Click **Draw Zone** to enter drawing mode
+1. Click on the map to place polygon points around your area
+1. Double-click to complete the polygon
+1. Fill in the area details in the dialog that appears and press **Save**
+
+<video controls autoplay>
+    <source src="/docs/screencasts/areas.mp4" type="video/mp4">
+</video>
+
+## Deleting an Area
+
+1. Find the area in the table below the map
+1. Click the **Actions** menu (three dots) in the row
+1. Select **Delete** and confirm
+
+:::danger
+Deleting an area will also delete all associated pricing rules in your price lists.
+:::
+
+## Reference
+
+| Field | Description |
+|-------|-------------|
+| **Main text** | The primary name for this area (e.g., "Athens International Airport"). This appears in the booking form when the area is shown as a selectable option. |
+| **Secondary text** | Additional descriptive text (e.g., "Eleftherios Venizelos"). Helps customers identify the location. |
+| **Type** | Categorize the area: **Airport**, **Port**, **Hotel / Lodging**, or **Other**. This helps organize areas and may affect how they're displayed. |
+| **Show in booking form?** | When enabled, this area appears as a selectable option in the booking form address picker. Customers can select it directly instead of typing an address. |
+
+## Area Types
+
+| Type | Description |
+|------|-------------|
+| **Airport** | International or domestic airports |
+| **Port** | Ferry terminals, cruise ports, marinas |
+| **Hotel / Lodging** | Hotels, resorts, vacation rental areas |
+| **Other** | Train stations, landmarks, city districts, or any other notable location |
+
+## How Areas Connect to Pricing
+
+Areas are used in [Price Lists](/docs/en/catalog/03-price-lists) to define route-based pricing. For example:
+
+- Airport → City Center: €45 flat rate
+- Port → Airport: €60 flat rate
+- Hotel District → Airport: €35 flat rate
+
+When a customer books a transfer and their pickup or drop-off location falls within a defined Area, the corresponding pricing rule is applied.
+
+## Tips
+
+### Naming Areas
+
+If you're showing the area on the booking form, you should use clear names that customers will understand.
+Furthermore, we calculate the routes based on the area name, so **avoid using vague names** that
+don't correspond to real-world locations.
+
+- **Good**: "Athens International Airport", "Piraeus Port", "Glyfada Beach Hotels"
+- **Avoid**: "Zone A", "Area 1", or internal codes
+
+### Area Size
+
+- Draw areas that are large enough to capture all relevant pickup/drop-off points
+- For airports, include terminal access roads and nearby hotels
+- For hotel districts, cover the entire area where properties are located
+
+### Booking Form Display
+
+Enable "Show in booking form" for locations that customers frequently search for. This saves them time and ensures accurate location selection. You might enable it for:
+
+- Major airports and ports
+- Hotel areas

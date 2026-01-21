@@ -64,7 +64,7 @@ TransferVista uses two distinct geographic zone systems:
 | Page | File | Status | Description |
 |------|------|--------|-------------|
 | Overview | `bookings/overview.md` | Done | Bookings list and filtering |
-| Calendar | `bookings/calendar.md` | Planned | Calendar view navigation |
+| Calendar | `bookings/calendar.md` | Done | Calendar view navigation |
 | Booking Details | `bookings/booking-details.md` | Done | Individual booking view |
 | Status Workflow | `bookings/status-workflow.md` | Planned | Lifecycle management |
 | Assigning Operators | `bookings/assigning-operators.md` | Done | Driver assignment |
@@ -83,12 +83,12 @@ TransferVista uses two distinct geographic zone systems:
 - [x] Pagination
 
 **Calendar**
-- [ ] Week view navigation
-- [ ] Month view navigation
-- [ ] Day view navigation
-- [ ] Date picker usage
-- [ ] Booking display on calendar
-- [ ] Click-through to booking details
+- [x] Week view navigation
+- [x] Month view navigation
+- [x] Day view navigation
+- [x] Date picker usage
+- [x] Booking display on calendar
+- [x] Click-through to booking details
 
 **Booking Details**
 - [x] Booking information sections:
@@ -108,6 +108,7 @@ TransferVista uses two distinct geographic zone systems:
 
 **Status Workflow**
 - [ ] Status definitions:
+  - [ ] Pending Payment: Awaiting customer payment
   - [ ] Accepted: Booking received
   - [ ] Assigned: Driver allocated
   - [ ] Picked Up: Customer collected
@@ -125,11 +126,13 @@ TransferVista uses two distinct geographic zone systems:
 - [x] Unassigning operators
 
 **Payments**
-- [ ] Payment method display
+- [ ] Payment methods
+    - [ ] Pay on Arrival
+    - [ ] Online Payment (Note Stripe Integration is required)
+    - [ ] On Arrival with Deposit
 - [ ] Pay on arrival workflow
 - [ ] Online payment status
 - [ ] Deposit handling
-- [ ] Refund process (if applicable)
 - [ ] Payment confirmation
 
 ---

@@ -275,7 +275,7 @@ TransferVista uses two distinct geographic zone systems:
 |------|------|--------|-------------|
 | Vehicles | `catalog/vehicles.md` | Done | Fleet management |
 | Areas | `catalog/areas.md` | Done | Pricing zones for route-based pricing |
-| Price Lists | `catalog/price-lists.md` | Planned | Pricing configuration |
+| Price Lists | `catalog/price-lists.md` | Done | Pricing configuration |
 | Extras | `catalog/extras.md` | Done | Add-on services |
 
 #### Content Requirements
@@ -311,20 +311,20 @@ TransferVista uses two distinct geographic zone systems:
 - [ ] Area overlap handling and priority
 
 **Price Lists**
-- [ ] Base price list vs Partner price lists
-- [ ] Creating a new price list
-- [ ] Pricing dimensions:
-  - [ ] By route (Area → Area)
-  - [ ] By group/zone
-  - [ ] By vehicle type
-  - [ ] By time of day
-  - [ ] By kilometer
-  - [ ] EUR per KM rates
-  - [ ] Flat price option
-- [ ] Discount configuration
-- [ ] Assigning price lists to partners
+- [x] Base price list vs Partner price lists
+- [x] Creating a new price list
+- [x] Pricing dimensions:
+  - [x] By route (Area → Area)
+  - [x] By group/zone
+  - [x] By vehicle type
+  - [x] By time of day
+  - [x] By kilometer
+  - [x] EUR per KM rates
+  - [x] Flat price option
+- [x] Discount configuration
+- [x] Assigning price lists to partners
 - [ ] Price list priority/fallback
-- [ ] Relationship between Areas and pricing rules
+- [x] Relationship between Areas and pricing rules
 
 **Extras**
 - [x] Creating extra services (e.g., child seat, meet & greet)

@@ -17,50 +17,50 @@ export default defineConfig({
           label: "English",
           lang: "en",
         },
-          el: {
-            label: "Ελληνικά",
-            lang: "el",
-          },
-          es: {
-            label: "Español",
-            lang: "es",
-          },
-          fr: {
-            label: "Français",
-            lang: "fr",
-          },
-          it: {
-            label: "Italiano",
-            lang: "it",
-          },
-          de: {
-            label: "Deutsch",
-            lang: "de",
-          }
+        el: {
+          label: "Ελληνικά",
+          lang: "el",
+        },
+        es: {
+          label: "Español",
+          lang: "es",
+        },
+        fr: {
+          label: "Français",
+          lang: "fr",
+        },
+        it: {
+          label: "Italiano",
+          lang: "it",
+        },
+        de: {
+          label: "Deutsch",
+          lang: "de",
+        },
       },
       sidebar: [
         {
-          label: "Get started",
-          translations: {
-            el: "Ξεκινώντας",
-            es: "Empezar",
-            fr: "Commencer",
-            it: "Iniziare",
-            de: "Anfangen",
-          },
-          autogenerate: { directory: "guides" },
+          label: "Getting Started",
+          autogenerate: { directory: "getting-started" },
         },
+        { label: "Bookings", autogenerate: { directory: "bookings" } },
+        { label: "Driver Experience", autogenerate: { directory: "drivers" } },
+        { label: "Settings", autogenerate: { directory: "settings" } },
+        { label: "Catalog", autogenerate: { directory: "catalog" } },
+        { label: "Availability", autogenerate: { directory: "availability" } },
+        { label: "Team Management", autogenerate: { directory: "team" } },
         {
-          label: "Navigation",
-          translations: {
-            el: "Μενού πλοήγησης",
-            es: "Navegación",
-            fr: "Navigation",
-            it: "Navigazione",
-            de: "Navigationsleiste",
-          },
-          autogenerate: { directory: "navigation" },
+          label: "Communications",
+          autogenerate: { directory: "communications" },
         },
+        { label: "Partners", autogenerate: { directory: "partners" } },
+        {
+          label: "Tours",
+          badge: "Add-on",
+          autogenerate: { directory: "tours" },
+        },
+        { label: "Reports & Invoices", autogenerate: { directory: "reports" } },
+        { label: "Booking Form", autogenerate: { directory: "booking-form" } },
       ],
       social: [
         {

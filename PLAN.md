@@ -193,7 +193,7 @@ TransferVista uses two distinct geographic zone systems:
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
-| General | `settings/general.md` | Planned | Business name, subdomain, timezone, language, currency, support info |
+| General | `settings/general.md` | Done | Business name, subdomain, timezone, language, currency, support info |
 | Bookings | `settings/bookings.md` | Planned | Reference prefixes, payment methods, pricing rules |
 | Forms & Documents | `settings/forms-documents.md` | Planned | Vouchers, agreements, signatures, invoices |
 | Branding | `settings/branding.md` | Planned | Logo, colors, visual identity |
@@ -203,15 +203,15 @@ TransferVista uses two distinct geographic zone systems:
 #### Content Requirements
 
 **General Settings**
-- [ ] Business name configuration
-- [ ] Subdomain setup (note: contact support to change)
-- [ ] Timezone selection and importance
-- [ ] Default language for booking form
-- [ ] Currency selection (note: doesn't convert existing prices)
-- [ ] Terms and Conditions URL
-- [ ] Privacy Policy URL
-- [ ] Support website/email/phone
-- [ ] Review link (for completed booking emails)
+- [x] Business name configuration
+- [x] Subdomain setup (note: contact support to change)
+- [x] Timezone selection and importance
+- [x] Default language for booking form
+- [x] Currency selection (note: doesn't convert existing prices)
+- [x] Terms and Conditions URL
+- [x] Privacy Policy URL
+- [x] Support website/email/phone
+- [x] Review link (for completed booking emails)
 
 **Bookings Settings**
 - [ ] Transfer reference prefix (e.g., TRF)

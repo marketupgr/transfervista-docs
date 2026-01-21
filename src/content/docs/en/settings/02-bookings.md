@@ -46,7 +46,7 @@ Configure how customers can pay for their bookings. You can enable multiple paym
 | Option | Description |
 |--------|-------------|
 | **Enable payment on arrival** | Customers can choose to pay when they meet the driver. No upfront payment is required. |
-| **Enable payment online** | Customers pay for their booking in full online at the time of booking. Requires [Stripe integration](/en/settings/integrations/). |
+| **Enable payment online** | Customers pay for their booking in full online at the time of booking. Requires [Stripe integration](/docs/en/settings/06-integrations/#stripe). |
 | **Enable payment on arrival with deposit** | Customers pay a deposit online and the remaining balance on arrival. |
 | **Deposit %** | The percentage of the total booking price required as a deposit (e.g., `20` for a 20% deposit). Only applies when deposit payment is enabled. |
 

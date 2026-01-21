@@ -198,7 +198,7 @@ TransferVista uses two distinct geographic zone systems:
 | Forms & Documents | `settings/forms-documents.md` | Done | Vouchers, agreements, signatures, invoices |
 | Branding | `settings/branding.md` | Done | Logo, colors, visual identity |
 | Permissions | `settings/permissions.md` | Planned | Role-based access for drivers |
-| Integrations | `settings/integrations.md` | Planned | Third-party service connections |
+| Integrations | `settings/integrations.md` | Done | Third-party service connections |
 
 #### Content Requirements
 
@@ -252,20 +252,20 @@ TransferVista uses two distinct geographic zone systems:
 - [ ] Permission inheritance explanation
 
 **Integrations**
-- [ ] Stripe setup:
-  - [ ] Account connection
-  - [ ] Payment processing flow
-  - [ ] Webhook configuration
-- [ ] Google Calendar:
-  - [ ] OAuth connection
-  - [ ] Sync settings
-  - [ ] Event creation
-- [ ] Google Analytics:
-  - [ ] Tracking ID setup
-  - [ ] Events tracked
-- [ ] Google Ads:
-  - [ ] Conversion tracking
-  - [ ] Tag configuration
+- [x] Stripe setup:
+  - [x] Account connection
+  - [x] Payment processing flow
+  - [x] Webhook configuration
+- [x] Google Calendar:
+  - [x] OAuth connection
+  - [x] Sync settings
+  - [x] Event creation
+- [x] Google Analytics:
+  - [x] Tracking ID setup
+  - [x] Events tracked
+- [x] Google Ads:
+  - [x] Conversion tracking
+  - [x] Tag configuration
 
 ---
 

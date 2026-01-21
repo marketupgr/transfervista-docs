@@ -273,41 +273,41 @@ TransferVista uses two distinct geographic zone systems:
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
-| Vehicles | `catalog/vehicles.md` | Planned | Fleet management |
-| Areas | `catalog/areas.md` | Planned | Pricing zones for route-based pricing |
+| Vehicles | `catalog/vehicles.md` | Done | Fleet management |
+| Areas | `catalog/areas.md` | Done | Pricing zones for route-based pricing |
 | Price Lists | `catalog/price-lists.md` | Planned | Pricing configuration |
-| Extras | `catalog/extras.md` | Planned | Add-on services |
+| Extras | `catalog/extras.md` | Done | Add-on services |
 
 #### Content Requirements
 
 **Vehicles**
-- [ ] Adding a new vehicle
-- [ ] Vehicle image upload
-- [ ] Title/name configuration
-- [ ] Passenger capacity setting
-- [ ] Luggage capacity setting
-- [ ] Editing existing vehicles
-- [ ] Deleting vehicles
-- [ ] Vehicle display on booking form
+- [x] Adding a new vehicle
+- [x] Vehicle image upload
+- [x] Title/name configuration
+- [x] Passenger capacity setting
+- [x] Luggage capacity setting
+- [x] Editing existing vehicles
+- [x] Deleting vehicles
+- [x] Vehicle display on booking form
 
 **Areas (Pricing Zones)**
 
 > **Note**: Areas are used for **pricing rules** - they define geographic zones that are referenced in price lists to calculate route-based pricing. Areas are different from Availability Zones (see Section 4).
 
-- [ ] Understanding Areas vs Availability Zones
-- [ ] Interactive map interface
-- [ ] Creating pricing areas:
-  - [ ] Polygon drawing tool
-  - [ ] Area naming conventions
-- [ ] Location types:
-  - [ ] Airport
-  - [ ] Port
-  - [ ] Hotel
-  - [ ] Other
-- [ ] How Areas connect to Price Lists
-- [ ] Area-to-Area pricing (origin → destination)
-- [ ] Editing area boundaries
-- [ ] Deleting areas
+- [x] Understanding Areas vs Availability Zones
+- [x] Interactive map interface
+- [x] Creating pricing areas:
+  - [x] Polygon drawing tool
+  - [x] Area naming conventions
+- [x] Location types:
+  - [x] Airport
+  - [x] Port
+  - [x] Hotel
+  - [x] Other
+- [x] How Areas connect to Price Lists
+- [x] Area-to-Area pricing (origin → destination)
+- [x] Editing area boundaries
+- [x] Deleting areas
 - [ ] Area overlap handling and priority
 
 **Price Lists**
@@ -327,11 +327,11 @@ TransferVista uses two distinct geographic zone systems:
 - [ ] Relationship between Areas and pricing rules
 
 **Extras**
-- [ ] Creating extra services (e.g., child seat, meet & greet)
-- [ ] Extra pricing
+- [x] Creating extra services (e.g., child seat, meet & greet)
+- [x] Extra pricing
 - [ ] Availability per vehicle type
-- [ ] Display on booking form
-- [ ] Extras in booking details
+- [x] Display on booking form
+- [x] Extras in booking details
 
 ---
 

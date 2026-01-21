@@ -3,6 +3,8 @@ title: Areas
 description: Define notable locations for pricing rules and booking form display
 ---
 
+import { Steps } from '@astrojs/starlight/components';
+
 To access Areas, go to **Catalog** in the sidebar and select the **Areas** tab.
 
 Areas are notable locations that your transfer company wants to highlight. They serve two purposes:
@@ -29,21 +31,31 @@ company typically has fewer Availability Zones than Areas.
 
 ## Creating an Area
 
+<Steps>
 1. Use the **Search** field to find your location on the map
+
 1. Click **Draw Zone** to enter drawing mode
+
 1. Click on the map to place polygon points around your area
+
 1. Double-click to complete the polygon
+
 1. Fill in the area details in the dialog that appears and press **Save**
+</Steps>
 
 <video controls autoplay>
-    <source src="/docs/screencasts/areas.mp4" type="video/mp4">
+    <source src="/docs/screencasts/areas.mp4" type="video/mp4" />
 </video>
 
 ## Deleting an Area
 
+<Steps>
 1. Find the area in the table below the map
+
 1. Click the **Actions** menu (three dots) in the row
+
 1. Select **Delete** and confirm
+</Steps>
 
 :::danger
 Deleting an area will also delete all associated pricing rules in your price lists.
@@ -72,8 +84,7 @@ Deleting an area will also delete all associated pricing rules in your price lis
 Areas are used in [Price Lists](/docs/en/catalog/03-price-lists) to define route-based pricing. For example:
 
 - Airport → City Center: €45 flat rate
-- Port → Airport: €60 flat rate
-- Hotel District → Airport: €35 flat rate
+- City Center → Airport: €65 flat rate
 
 When a customer books a transfer and their pickup or drop-off location falls within a defined Area, the corresponding pricing rule is applied.
 

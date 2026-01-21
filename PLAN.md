@@ -195,8 +195,8 @@ TransferVista uses two distinct geographic zone systems:
 |------|------|--------|-------------|
 | General | `settings/general.md` | Done | Business name, subdomain, timezone, language, currency, support info |
 | Bookings | `settings/bookings.md` | Done | Reference prefixes, payment methods, pricing rules |
-| Forms & Documents | `settings/forms-documents.md` | Planned | Vouchers, agreements, signatures, invoices |
-| Branding | `settings/branding.md` | Planned | Logo, colors, visual identity |
+| Forms & Documents | `settings/forms-documents.md` | Done | Vouchers, agreements, signatures, invoices |
+| Branding | `settings/branding.md` | Done | Logo, colors, visual identity |
 | Permissions | `settings/permissions.md` | Planned | Role-based access for drivers |
 | Integrations | `settings/integrations.md` | Planned | Third-party service connections |
 
@@ -227,23 +227,23 @@ TransferVista uses two distinct geographic zone systems:
 - [x] Price rounding options
 
 **Forms & Documents**
-- [ ] Transfer Voucher settings
-- [ ] Voucher display options:
-  - [ ] Show/hide payment method on voucher
-  - [ ] Show/hide price on voucher
-- [ ] Agreement/Consent text:
-  - [ ] English version
-  - [ ] Localized versions (Greek, Spanish, French, Italian, Turkish)
-- [ ] Signature image upload
-- [ ] Invoice customization
-- [ ] Code/template editing
+- [x] Transfer Voucher settings
+- [x] Voucher display options:
+  - [x] Show/hide payment method on voucher
+  - [x] Show/hide price on voucher
+- [x] Agreement/Consent text:
+  - [x] English version
+  - [x] Localized versions (Greek, Spanish, French, Italian, Turkish)
+- [x] Signature image upload
+- [x] Invoice customization
+- [x] Code/template editing
 
 **Branding**
-- [ ] Logo upload requirements (dimensions, format)
-- [ ] Brand color picker
-- [ ] Base colors configuration
-- [ ] Text color settings
-- [ ] Preview on booking form
+- [x] Logo upload requirements (dimensions, format)
+- [x] Brand color picker
+- [x] Base colors configuration
+- [x] Text color settings
+- [x] Preview on booking form
 
 **Permissions**
 - [ ] Driver role permissions:

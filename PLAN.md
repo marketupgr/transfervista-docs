@@ -194,7 +194,7 @@ TransferVista uses two distinct geographic zone systems:
 | Page | File | Status | Description |
 |------|------|--------|-------------|
 | General | `settings/general.md` | Done | Business name, subdomain, timezone, language, currency, support info |
-| Bookings | `settings/bookings.md` | Planned | Reference prefixes, payment methods, pricing rules |
+| Bookings | `settings/bookings.md` | Done | Reference prefixes, payment methods, pricing rules |
 | Forms & Documents | `settings/forms-documents.md` | Planned | Vouchers, agreements, signatures, invoices |
 | Branding | `settings/branding.md` | Planned | Logo, colors, visual identity |
 | Permissions | `settings/permissions.md` | Planned | Role-based access for drivers |
@@ -214,17 +214,17 @@ TransferVista uses two distinct geographic zone systems:
 - [x] Review link (for completed booking emails)
 
 **Bookings Settings**
-- [ ] Transfer reference prefix (e.g., TRF)
-- [ ] Tour reference prefix (e.g., TOU)
-- [ ] Return URL configuration
-- [ ] Minimum distance settings
-- [ ] Minimum duration settings
-- [ ] Return trip discount percentage
-- [ ] Payment methods:
-  - [ ] Pay on arrival
-  - [ ] Online payment (Stripe)
-  - [ ] Deposit percentage
-- [ ] Price rounding options
+- [x] Transfer reference prefix (e.g., TRF)
+- [x] Tour reference prefix (e.g., TOU)
+- [x] Return URL configuration
+- [x] Minimum distance settings
+- [x] Minimum duration settings
+- [x] Return trip discount percentage
+- [x] Payment methods:
+  - [x] Pay on arrival
+  - [x] Online payment (Stripe)
+  - [x] Deposit percentage
+- [x] Price rounding options
 
 **Forms & Documents**
 - [ ] Transfer Voucher settings

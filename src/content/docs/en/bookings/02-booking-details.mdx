@@ -41,7 +41,7 @@ The right side of the header shows the booking's progress through the status wor
 - **Picked Up** - Customer has been collected
 - **Completed** - Transfer has been finished
 
-A checkmark indicates a completed stage, while an "x" indicates a pending stage.
+A checkmark indicates a completed stage, while an "x" indicates a pending stage. For full details on each status and transition rules, see [Status Workflow](/docs/en/bookings/06-status-workflow).
 
 ### Changing Status
 
@@ -54,6 +54,12 @@ To change the booking status:
    - Set status to Completed
    - Set status to Cancelled
 3. Click the **Apply** button (arrow icon)
+
+Only valid transitions are shown (e.g. from **Assigned** you may see Pending Payment, Accepted, Completed, Cancelled; **Set status to Picked up** appears when the booking is Assigned and ready for the driver to mark as collected).
+
+:::note
+Only transitions allowed for the current status are shown in the Select Action dropdown.
+:::
 
 ## Transfer Section
 

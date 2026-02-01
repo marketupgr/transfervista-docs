@@ -66,7 +66,7 @@ TransferVista uses two distinct geographic zone systems:
 | Overview | `bookings/overview.md` | Done | Bookings list and filtering |
 | Calendar | `bookings/calendar.md` | Done | Calendar view navigation |
 | Booking Details | `bookings/booking-details.md` | Done | Individual booking view |
-| Status Workflow | `bookings/status-workflow.md` | Planned | Lifecycle management |
+| Status Workflow | `bookings/status-workflow.md` | Done | Lifecycle management |
 | Assigning Operators | `bookings/assigning-operators.md` | Done | Driver assignment |
 | Payments | `bookings/payments.md` | Planned | Payment handling |
 
@@ -107,16 +107,16 @@ TransferVista uses two distinct geographic zone systems:
 - [x] Edit capabilities
 
 **Status Workflow**
-- [ ] Status definitions:
-  - [ ] Pending Payment: Awaiting customer payment
-  - [ ] Accepted: Booking received
-  - [ ] Assigned: Driver allocated
-  - [ ] Picked Up: Customer collected
-  - [ ] Completed: Journey finished
-  - [ ] Cancelled: Booking voided
-- [ ] Status transition rules
-- [ ] Status change notifications
-- [ ] Automatic vs manual transitions
+- [x] Status definitions:
+  - [x] Pending Payment: Awaiting customer payment
+  - [x] Accepted: Booking received
+  - [x] Assigned: Driver allocated
+  - [x] Picked Up: Customer collected
+  - [x] Completed: Journey finished
+  - [x] Cancelled: Booking voided
+- [x] Status transition rules
+- [x] Status change notifications
+- [x] Automatic vs manual transitions
 
 **Assigning Operators**
 - [x] Operator selection dropdown
@@ -143,49 +143,49 @@ TransferVista uses two distinct geographic zone systems:
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
-| Overview | `drivers/overview.md` | Planned | Introduction to the driver interface |
-| Viewing Assignments | `drivers/viewing-assignments.md` | Planned | How drivers see and access their assigned bookings |
-| Managing Bookings | `drivers/managing-bookings.md` | Planned | Updating booking status and completing transfers |
+| Overview | `drivers/overview.md` | Done | Introduction to the driver interface |
+| Viewing Assignments | `drivers/viewing-assignments.md` | Done | How drivers see and access their assigned bookings |
+| Managing Bookings | `drivers/managing-bookings.md` | Done | Updating booking status and completing transfers |
 
 #### Content Requirements
 
 **Overview**
-- [ ] What drivers see when they log in
-- [ ] Driver dashboard layout
-- [ ] Navigation for drivers
-- [ ] Mobile-friendly interface notes
-- [ ] Driver role permissions (what they can/cannot access)
+- [x] What drivers see when they log in
+- [x] Driver dashboard layout
+- [x] Navigation for drivers
+- [x] Mobile-friendly interface notes
+- [x] Driver role permissions (what they can/cannot access)
 
 **Viewing Assignments**
-- [ ] Assignments list/panel
-- [ ] Filtering by date (today, upcoming, past)
-- [ ] Assignment details visible to drivers:
-  - [ ] Pickup location and address
-  - [ ] Drop-off location and address
-  - [ ] Pickup date and time
-  - [ ] Customer name
-  - [ ] Customer phone number
-  - [ ] Number of passengers
-  - [ ] Luggage count
-  - [ ] Vehicle assigned
-  - [ ] Special instructions/notes
-  - [ ] Flight/ferry details (if applicable)
-- [ ] Viewing route on map
-- [ ] Accessing customer contact information
-- [ ] Price visibility (based on permissions)
-- [ ] Commission visibility (based on permissions)
+- [x] Assignments list/panel
+- [x] Filtering by date (today, upcoming, past)
+- [x] Assignment details visible to drivers:
+  - [x] Pickup location and address
+  - [x] Drop-off location and address
+  - [x] Pickup date and time
+  - [x] Customer name
+  - [x] Customer phone number
+  - [x] Number of passengers
+  - [x] Luggage count
+  - [x] Vehicle assigned
+  - [x] Special instructions/notes
+  - [x] Flight/ferry details (if applicable)
+- [x] Viewing route on map
+- [x] Accessing customer contact information
+- [x] Price visibility (based on permissions)
+- [x] Commission visibility (based on permissions)
 
 **Managing Bookings**
-- [ ] Updating booking status:
-  - [ ] Marking as "Picked Up" when customer is collected
-  - [ ] Marking as "Completed" when journey is finished
-- [ ] Status update workflow
-- [ ] Confirmation prompts
-- [ ] What happens after status change:
-  - [ ] Notifications sent to customer/manager
-  - [ ] Booking moves to completed list
-- [ ] Viewing completed/past assignments
-- [ ] Notes or issues reporting (if applicable)
+- [x] Updating booking status:
+  - [x] Marking as "Picked Up" when customer is collected
+  - [x] Marking as "Completed" when journey is finished
+- [x] Status update workflow
+- [x] Confirmation prompts
+- [x] What happens after status change:
+  - [x] Notifications sent to customer/manager
+  - [x] Booking moves to completed list
+- [x] Viewing completed/past assignments
+- [x] Notes or issues reporting (if applicable)
 
 ---
 
@@ -197,7 +197,7 @@ TransferVista uses two distinct geographic zone systems:
 | Bookings | `settings/bookings.md` | Done | Reference prefixes, payment methods, pricing rules |
 | Forms & Documents | `settings/forms-documents.md` | Done | Vouchers, agreements, signatures, invoices |
 | Branding | `settings/branding.md` | Done | Logo, colors, visual identity |
-| Permissions | `settings/permissions.md` | Planned | Role-based access for drivers |
+| Permissions | `settings/permissions.md` | Done | Role-based access for drivers |
 | Integrations | `settings/integrations.md` | Done | Third-party service connections |
 
 #### Content Requirements
@@ -246,10 +246,10 @@ TransferVista uses two distinct geographic zone systems:
 - [x] Preview on booking form
 
 **Permissions**
-- [ ] Driver role permissions:
-  - [ ] See price toggle
-  - [ ] See commission toggle
-- [ ] Permission inheritance explanation
+- [x] Driver role permissions:
+  - [x] See price toggle
+  - [x] See commission toggle
+- [x] Permission inheritance explanation
 
 **Integrations**
 - [x] Stripe setup:
@@ -339,9 +339,9 @@ TransferVista uses two distinct geographic zone systems:
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
-| Overview | `availability/overview.md` | Planned | Understanding availability configuration |
-| Zones | `availability/zones.md` | Planned | Geographic zones where transfers are available |
-| Rules & Scheduling | `availability/rules-scheduling.md` | Planned | Availability rules, closed hours, and date exceptions |
+| Overview | `availability/overview.md` | Done | Understanding availability configuration |
+| Zones | `availability/zones.md` | Done | Geographic zones where transfers are available |
+| Rules & Scheduling | `availability/rules-scheduling.md` | Done | Availability rules, closed hours, and date exceptions |
 
 #### Content Requirements
 
@@ -349,72 +349,72 @@ TransferVista uses two distinct geographic zone systems:
 
 > **Important**: Availability settings control **when** and **where** customers can book transfers. This is separate from pricing configuration (see Catalog > Areas).
 
-- [ ] Understanding the availability system
-- [ ] Difference between Availability Zones and Pricing Areas
-- [ ] How availability rules are evaluated
-- [ ] Impact on customer booking form
+- [x] Understanding the availability system
+- [x] Difference between Availability Zones and Pricing Areas
+- [x] How availability rules are evaluated
+- [x] Impact on customer booking form
 
 **Availability Zones**
 
 > **Note**: Availability Zones define the **geographic boundaries** where your transfer service operates. These are different from Catalog Areas which are used for pricing.
 
-- [ ] Understanding Availability Zones vs Pricing Areas:
-  - [ ] Availability Zones: Where you offer service
-  - [ ] Pricing Areas: How you calculate prices
-- [ ] Zone types:
-  - [ ] **Full Service**: Routes can start, end, or be entirely within the zone (e.g., hotel-to-hotel within city)
-  - [ ] **Cross Zone Only**: Routes must cross into another zone - both pickup and dropoff cannot be in the same zone (e.g., airport zone where transfers must go to/from another area)
-- [ ] Creating availability zones:
-  - [ ] Interactive map interface
-  - [ ] Drawing zone boundaries (polygon tool)
-  - [ ] Zone naming
-  - [ ] Selecting zone type (Full Service or Cross Zone Only)
-- [ ] Multiple zone management
-- [ ] Editing zone boundaries
-- [ ] Deleting zones
-- [ ] How zones affect the booking form:
-  - [ ] Location validation
-  - [ ] "Service not available" messages
+- [x] Understanding Availability Zones vs Pricing Areas:
+  - [x] Availability Zones: Where you offer service
+  - [x] Pricing Areas: How you calculate prices
+- [x] Zone types:
+  - [x] **Full Service**: Routes can start, end, or be entirely within the zone (e.g., hotel-to-hotel within city)
+  - [x] **Cross Zone Only**: Routes must cross into another zone - both pickup and dropoff cannot be in the same zone (e.g., airport zone where transfers must go to/from another area)
+- [x] Creating availability zones:
+  - [x] Interactive map interface
+  - [x] Drawing zone boundaries (polygon tool)
+  - [x] Zone naming
+  - [x] Selecting zone type (Full Service or Cross Zone Only)
+- [x] Multiple zone management
+- [x] Editing zone boundaries
+- [x] Deleting zones
+- [x] How zones affect the booking form:
+  - [x] Location validation
+  - [x] "Service not available" messages
 
 **Rules & Scheduling**
 
 This page covers three related features for controlling when bookings can be made:
 
 *Availability Rules*
-- [ ] Understanding availability rules
-- [ ] Rule configuration options:
-  - [ ] Day of week selection (Mon-Sun)
-  - [ ] Month selection (Jan-Dec)
-  - [ ] Time range (start time - end time)
-  - [ ] Advance booking margin (minimum notice period)
-- [ ] Rule description field
-- [ ] Seasonal availability:
-  - [ ] Summer/winter schedules
-  - [ ] Holiday periods
-- [ ] Creating, editing, and deleting rules
+- [x] Understanding availability rules
+- [x] Rule configuration options:
+  - [x] Day of week selection (Mon-Sun)
+  - [x] Month selection (Jan-Dec)
+  - [x] Time range (start time - end time)
+  - [x] Advance booking margin (minimum notice period)
+- [x] Rule description field
+- [x] Seasonal availability:
+  - [x] Summer/winter schedules
+  - [x] Holiday periods
+- [x] Creating, editing, and deleting rules
 
 *Closed Hours*
-- [ ] Purpose of closed hours
-- [ ] Enabling closed hours
-- [ ] Configuration:
-  - [ ] Start time (when closed period begins)
-  - [ ] End time (when closed period ends)
-  - [ ] Pickup cutoff (earliest allowed pickup time for bookings made during closed hours)
-- [ ] Example: If closed hours are 22:00-06:00 with an 08:00 cutoff, a customer booking at 23:00 can only schedule a pickup for 08:00 or later
-- [ ] Use cases:
-  - [ ] Night hours
-  - [ ] Office hours only
+- [x] Purpose of closed hours
+- [x] Enabling closed hours
+- [x] Configuration:
+  - [x] Start time (when closed period begins)
+  - [x] End time (when closed period ends)
+  - [x] Pickup cutoff (earliest allowed pickup time for bookings made during closed hours)
+- [x] Example: If closed hours are 22:00-06:00 with an 08:00 cutoff, a customer booking at 23:00 can only schedule a pickup for 08:00 or later
+- [x] Use cases:
+  - [x] Night hours
+  - [x] Office hours only
 
 *Unavailable Dates (Exceptions)*
-- [ ] Purpose of date exceptions
-- [ ] Adding unavailable dates:
-  - [ ] Date picker calendar
-  - [ ] Selecting specific dates
-- [ ] Common use cases:
-  - [ ] Public holidays
-  - [ ] Company holidays
-  - [ ] Special events
-- [ ] Removing unavailable dates
+- [x] Purpose of date exceptions
+- [x] Adding unavailable dates:
+  - [x] Date picker calendar
+  - [x] Selecting specific dates
+- [x] Common use cases:
+  - [x] Public holidays
+  - [x] Company holidays
+  - [x] Special events
+- [x] Removing unavailable dates
 
 ---
 
@@ -446,32 +446,32 @@ This page covers three related features for controlling when bookings can be mad
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
-| Members | `team/members.md` | Planned | Team member roles |
-| Drivers | `team/drivers.md` | Planned | Driver management |
+| Members | `team/members.md` | Done | Team member roles |
+| Drivers | `team/drivers.md` | Done | Driver management |
 
 #### Content Requirements
 
 **Members**
-- [ ] Inviting new members
-- [ ] Member roles:
-  - [ ] Owner: Full access
-  - [ ] Manager: Operational access
-  - [ ] Staff: Limited access
-  - [ ] Driver: Assignment-only access
-- [ ] Role permissions matrix
-- [ ] Removing members
-- [ ] Member list management
+- [x] Inviting new members
+- [x] Member roles:
+  - [x] Owner: Full access
+  - [x] Manager: Operational access
+  - [x] Staff: Limited access
+  - [x] Driver: Assignment-only access
+- [x] Role permissions matrix
+- [x] Removing members
+- [x] Member list management
 
 **Drivers**
-- [ ] Adding drivers
-- [ ] Driver profile:
-  - [ ] Photo upload
-  - [ ] Name
-  - [ ] Phone number
-  - [ ] Commission percentage
-- [ ] Commission fee calculation
-- [ ] Driver availability
-- [ ] Performance tracking
+- [x] Adding drivers
+- [x] Driver profile:
+  - [x] Photo upload
+  - [x] Name
+  - [x] Phone number
+  - [x] Commission percentage
+- [x] Commission fee calculation
+- [x] Driver availability
+- [x] Performance tracking
 
 ---
 
@@ -481,9 +481,9 @@ This page covers three related features for controlling when bookings can be mad
 
 | Page | File | Status | Description |
 |------|------|--------|-------------|
-| Overview | `partners/overview.md` | Planned | Understanding partner types and capabilities |
-| Booking Partners | `partners/booking-partners.md` | Planned | Partners who book transfers with commission |
-| Transfer Operators | `partners/transfer-operators.md` | Planned | Partners who fulfill transfer assignments |
+| Overview | `partners/overview.md` | Done | Understanding partner types and capabilities |
+| Booking Partners | `partners/booking-partners.md` | Done | Partners who book transfers with commission |
+| Transfer Operators | `partners/transfer-operators.md` | Done | Partners who fulfill transfer assignments |
 
 #### Content Requirements
 
@@ -491,21 +491,21 @@ This page covers three related features for controlling when bookings can be mad
 
 > **Key Concept**: A single partner can be configured as both a Booking Partner AND a Transfer Operator Partner, or just one of these roles.
 
-- [ ] What is a partner?
-- [ ] Partner types explained:
-  - [ ] **Booking Partner**: Has their own booking URL, can create bookings like customers, commission is added on top of prices
-  - [ ] **Transfer Operator Partner**: Can be assigned to transfer bookings, receives notifications about assignments
-- [ ] When to use each type
-- [ ] Partner vs Member/Operator distinction
-- [ ] Partner list view and management
+- [x] What is a partner?
+- [x] Partner types explained:
+  - [x] **Booking Partner**: Has their own booking URL, can create bookings like customers, commission is added on top of prices
+  - [x] **Transfer Operator Partner**: Can be assigned to transfer bookings, receives notifications about assignments
+- [x] When to use each type
+- [x] Partner vs Member/Operator distinction
+- [x] Partner list view and management
 
 **Booking Partners**
-- [ ] What is a Booking Partner?
-- [ ] Creating a booking partner:
-  - [ ] Partner name/business/title
-  - [ ] Contact information (name, email, phone)
-  - [ ] Enable "Can Book Transfers" checkbox
-  - [ ] Enable "Can Book Tours" checkbox (if Tours add-on enabled)
+- [x] What is a Booking Partner?
+- [x] Creating a booking partner:
+  - [x] Partner name/business/title
+  - [x] Contact information (name, email, phone)
+  - [x] Enable "Can Book Transfers" checkbox
+  - [x] Enable "Can Book Tours" checkbox (if Tours add-on enabled)
 - [ ] Booking Link:
   - [ ] Unique partner booking URL
   - [ ] How partners use the booking link
@@ -535,36 +535,36 @@ This page covers three related features for controlling when bookings can be mad
   - [ ] Booking via API
 
 **Transfer Operator Partners**
-- [ ] What is a Transfer Operator Partner?
-- [ ] Creating a transfer operator partner:
-  - [ ] Partner name/business/title
-  - [ ] Contact information
-  - [ ] Enable "Is a transfer partner/operator" checkbox
-- [ ] Assignment workflow:
-  - [ ] Assigning partner to transfers
-  - [ ] Partner receives assignment requests
-  - [ ] Accept/decline assignments
-  - [ ] Notifications for assignments
-- [ ] Difference from internal Operators:
-  - [ ] Partners are external companies
-  - [ ] Operators are individual drivers
-- [ ] Partner as operator on booking detail page
+- [x] What is a Transfer Operator Partner?
+- [x] Creating a transfer operator partner:
+  - [x] Partner name/business/title
+  - [x] Contact information
+  - [x] Enable "Is a transfer partner/operator" checkbox
+- [x] Assignment workflow:
+  - [x] Assigning partner to transfers
+  - [x] Partner receives assignment requests
+  - [x] Accept/decline assignments
+  - [x] Notifications for assignments
+- [x] Difference from internal Operators:
+  - [x] Partners are external companies
+  - [x] Operators are individual drivers
+- [x] Partner as operator on booking detail page
 
 **Partner Configuration**
-- [ ] Editing partner details
-- [ ] Partner contact information:
-  - [ ] Name/Business/Title
-  - [ ] Contact Name
-  - [ ] Contact Email
-  - [ ] Contact Phone
-- [ ] Partner capabilities toggles:
-  - [ ] Can Book Transfers
-  - [ ] Can Book Tours
-  - [ ] Is a transfer partner/operator
-- [ ] Viewing partner details page
-- [ ] Deleting partners
-- [ ] Partner table columns:
-  - [ ] #, Name, Contact Name, Contact Email, Contact Phone, Actions
+- [x] Editing partner details
+- [x] Partner contact information:
+  - [x] Name/Business/Title
+  - [x] Contact Name
+  - [x] Contact Email
+  - [x] Contact Phone
+- [x] Partner capabilities toggles:
+  - [x] Can Book Transfers
+  - [x] Can Book Tours
+  - [x] Is a transfer partner/operator
+- [x] Viewing partner details page
+- [x] Deleting partners
+- [x] Partner table columns:
+  - [x] #, Name, Contact Name, Contact Email, Contact Phone, Actions
 
 ---
 

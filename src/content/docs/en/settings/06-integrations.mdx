@@ -14,7 +14,7 @@ Connect your Stripe account to accept online payments from customers.
 | Field | Description |
 |-------|-------------|
 | **Stripe Publishable Key** | Your Stripe publishable key (starts with `pk_`). Found in your Stripe Dashboard under Developers > API keys. |
-| **Stripe Secret Key** | Your Stripe secret key (starts with `sk_`). Keep this confidential. Found in your Stripe Dashboard under Developers > API keys. |
+| **Stripe Secret/Restricted Key** | Your Stripe secret key (starts with `sk_`) or restricted key (starts with `rk_`) with payment permissions. Found in your Stripe Dashboard under Developers > API keys. |
 
 :::note
 Once Stripe is configured, you can enable online payment options in [Bookings Settings](/docs/en/settings/02-bookings/#payment-methods).
@@ -28,9 +28,31 @@ Once Stripe is configured, you can enable online payment options in [Bookings Se
 
 2. In your Stripe Dashboard, go to **Developers > API keys**
 
-3. Copy your **Publishable key** and **Secret key**
+    <div style={{ display: 'flex', justifyContent: 'center', margin: '1rem 0' }}>
+        ![Stripe Menu](../../../../assets/screenshots/stripe-1.png)
+    </div>
 
-4. Paste both keys into the corresponding fields in TransferVista
+3. Create a **Restricted** key
+
+    <Steps>
+
+        1. Click **Create restricted key**
+
+        2. When asked "How will you use this API key?", select "Providing this key to another website". Press continue.
+
+        3. Name the key (e.g. "TransferVista") and provide the following URL:
+
+            ```
+            https://reserve-transfer.com
+            ```
+
+        4. Click Create restricted key. A pop-up will show your restricted key (starts with `rk_`). Copy this key and paste it to the **Stripe Secret key** field in TransferVista.
+
+    </Steps>
+
+    ![Stripe Keys](../../../../assets/screenshots/stripe-2-keys.png)
+
+4. Find your publishable key (starts with `pk_`) under "Standard keys" and copy it to the **Stripe Publishable key** field in TransferVista.
 
 5. Click **Save**
 

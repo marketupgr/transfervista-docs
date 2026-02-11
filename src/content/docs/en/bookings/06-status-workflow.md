@@ -5,7 +5,26 @@ description: Understand booking lifecycle from accepted to completed or cancelle
 
 Every transfer booking in TransferVista moves through a clear status workflow. Understanding each status and when it changes helps you and your drivers keep operations smooth and customers informed.
 
-![Booking Details header with Select Action dropdown and status workflow timeline (Accepted, Assigned, Picked Up, Completed)](../../../../assets/screenshots/status-workflow.png)
+![Booking Status section showing progress bar with Accepted and Assigned completed, Picked Up and Completed pending, and action buttons below](../../../../assets/screenshots/status-workflow.png)
+
+## Visual Status Progress
+
+On the [Booking Details](/docs/en/bookings/02-booking-details) page, the **Booking Status** section displays a visual progress bar showing the booking's current position in the workflow:
+
+The progress bar shows four main stages:
+
+- **Accepted** - Booking has been received and confirmed
+- **Assigned** - A driver or operator has been allocated
+- **Picked Up** - Customer has been collected
+- **Completed** - Journey is finished
+
+**Visual indicators:**
+- ✓ **Blue checkmark** - Stage has been completed
+- ✗ **Grey X mark** - Stage is pending (not yet reached)
+- **Blue connecting bar** - Transition between completed stages
+- **Grey connecting bar** - Transition to pending stages
+
+The progress bar updates automatically as the booking moves through each status, giving you a quick visual reference of where the booking is in its lifecycle.
 
 ## Status definitions
 
@@ -22,13 +41,25 @@ You can filter bookings by these statuses on the [Bookings](/docs/en/bookings/01
 
 ## How status changes
 
+Status changes can happen automatically or manually:
+
 - **Automatic:** Some statuses are set by the system (e.g. Accepted when a booking is created, Pending Payment when online payment is required).
-- **Manual:** You or your drivers change status via the **Select Action** dropdown on the [Booking Details](/docs/en/bookings/02-booking-details) page. Drivers typically mark **Picked up** when they collect the customer and **Completed** when the journey ends.
+- **Manual:** You or your drivers can change status using the **action buttons** on the [Booking Details](/docs/en/bookings/02-booking-details) page. Quick actions include **Complete Booking** or **Cancel Booking**.
+
+Drivers typically mark **Picked up** when they collect the customer and **Completed** when the journey ends.
+
+### Status Transition Flow
+
+The typical status progression follows this sequence:
+
+**Pending Payment** → **Accepted** → **Assigned** → **Picked Up** → **Completed**
+
+However, **Cancelled** can occur at any point before **Completed**, ending the workflow.
 
 Only valid transitions are offered (e.g. you cannot mark a booking Completed without it first being Picked up).
 
 :::caution
-Only valid status transitions appear in the Select Action dropdown (e.g. you cannot set Completed without first Picked up).
+Only valid status transitions are available via the action buttons (e.g. you cannot set Completed without first Picked up).
 :::
 
 ## Notifications
@@ -38,5 +69,5 @@ When status changes, TransferVista can send email notifications to customers, ma
 ## Related pages
 
 - [Bookings Overview](/docs/en/bookings/01-overview) - Filter and list bookings by status
-- [Booking Details](/docs/en/bookings/02-booking-details) - Change status via Select Action
+- [Booking Details](/docs/en/bookings/02-booking-details) - Change status using action buttons
 - [Assigning Operators](/docs/en/bookings/03-assigning-operators) - Assign a driver (Accepted → Assigned)

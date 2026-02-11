@@ -27,7 +27,6 @@ The header displays miscellaneous booking information and status workflow.
 
 | Field | Description |
 |-------|-------------|
-| **Select Action** | Dropdown to change booking status |
 | **Booked by** | Who created the booking (Guest or user) |
 | **Booked at** | Date and time the booking was created |
 | **Last update at** | Date and time of the most recent change |
@@ -45,21 +44,56 @@ A checkmark indicates a completed stage, while an "x" indicates a pending stage.
 
 ### Changing Status
 
-To change the booking status:
+To change the booking status, use the action buttons below the status progress bar:
 
-1. Click the **Select Action** dropdown
-2. Choose the desired status:
-   - Set status to Pending Payment
-   - Set status to Accepted
-   - Set status to Completed
-   - Set status to Cancelled
-3. Click the **Apply** button (arrow icon)
+![Booking Status section showing progress bar with Accepted and Assigned completed, Picked Up and Completed pending, and action buttons below](../../../../assets/screenshots/status-workflow.png)
 
-Only valid transitions are shown (e.g. from **Assigned** you may see Pending Payment, Accepted, Completed, Cancelled; **Set status to Picked up** appears when the booking is Assigned and ready for the driver to mark as collected).
+##### Complete Booking
+
+The **Complete Booking** button (purple/blue) allows you to quickly advance the booking to **Completed** status. This button typically appears when the booking is in **Assigned** or **Picked Up** status.
+
+When you click **Complete Booking**:
+- The booking status changes to **Completed**
+- The progress bar updates to show all stages completed
+- Email notifications may be sent to the customer (depending on your [Email Templates](/docs/en/communications/01-email-templates) settings)
+- The booking moves to your completed bookings list
+
+:::tip
+Use **Complete Booking** when the transfer has finished and payment (if any) has been collected.
+:::
+
+##### Cancel Booking
+
+The **Cancel Booking** button (red) allows you to cancel the booking. This button is available for bookings that haven't been completed yet.
+
+When you click **Cancel Booking**:
+- The booking status changes to **Cancelled**
+- The booking is voided and no transfer will take place
+- The booking record is preserved in the system
+- Email notifications may be sent to the customer (depending on your email template settings)
+- The booking will appear in your cancelled bookings filter
 
 :::note
-Only transitions allowed for the current status are shown in the Select Action dropdown.
+Cancelling a booking keeps the booking record for reporting and historical purposes. If you need to permanently remove a booking, use **Delete Booking** instead.
 :::
+
+##### Delete Booking
+
+The **Delete Booking** button (light red/pink with border) permanently removes the booking from the system. Use this action with caution.
+
+When you click **Delete Booking**:
+- A confirmation prompt will appear (you must confirm the deletion)
+- The booking is permanently removed from the system
+- This action cannot be undone
+- The booking will no longer appear in any lists or reports
+
+:::caution
+**Delete Booking** is a permanent action that cannot be undone. Only use this if you need to completely remove a booking record. For most cases, use **Cancel Booking** instead to void the booking while keeping the record.
+:::
+
+**When to use Cancel vs Delete:**
+- **Cancel Booking** - Use when a customer cancels or you need to void a booking but want to keep records for reporting, accounting, or customer service purposes
+- **Delete Booking** - Use only when you need to permanently remove a booking (e.g., test bookings, duplicate entries, or data cleanup)
 
 ## Transfer Section
 

@@ -1,0 +1,133 @@
+---
+title: Εισαγωγή
+description: Επισκόπηση του TransferVista, των βασικών δυνατοτήτων του και του κοινού στο οποίο απευθύνεται
+---
+
+import { Card, CardGrid, LinkButton, LinkCard } from '@astrojs/starlight/components';
+import appStoreBadge from '../../../../assets/app-store-badge.svg';
+import googlePlayBadge from '../../../../assets/google-play-badge.svg';
+
+Το TransferVista είναι μια ολοκληρωμένη πλατφόρμα κρατήσεων και διαχείρισης λειτουργιών, ειδικά σχεδιασμένη
+για εταιρείες μεταφορών και διοργανωτές εκδρομών. Αν προσφέρετε ιδιωτικές μεταφορές ή οργανωμένες εκδρομές,
+το TransferVista σάς παρέχει όλα όσα χρειάζεστε για να διαχειρίζεστε κρατήσεις, να αναθέτετε διαδρομές σε οδηγούς
+και να αναπτύσσετε την επιχείρησή σας.
+
+Πάρτε το TransferVista μαζί σας στον δρόμο. Είναι διαθέσιμο σε όλες τις πλατφόρμες - web, iOS και Android -
+ώστε να μπορείτε να διαχειρίζεστε τις μεταφορές σας από οπουδήποτε.
+
+<div style="display:flex;justify-content:center">
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem;">
+    <a href="https://apps.apple.com/us/app/transfervista/id6762343033" aria-label="Download TransferVista on the App Store">
+      <img
+        src={appStoreBadge.src}
+        alt="Download on the App Store"
+        style="display: block; width: auto; height: 54px;"
+      />
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.transfervista.pro" aria-label="Get TransferVista on Google Play">
+      <img
+        src={googlePlayBadge.src}
+        alt="Get it on Google Play"
+        style="display: block; width: auto; height: 54px;"
+      />
+    </a>
+  </div>
+</div>
+
+## Για ποιους είναι το TransferVista;
+
+Το TransferVista έχει σχεδιαστεί για επιχειρήσεις που παρέχουν υπηρεσίες χερσαίων μεταφορών:
+
+- **Εταιρείες μεταφορών** Μεταφορές από και προς αεροδρόμια, ξενοδοχεία και ιδιωτικές μετακινήσεις
+- **Επιχειρήσεις φιλοξενίας** Ξενοδοχεία και θέρετρα που προσφέρουν μεταφορά στους επισκέπτες τους
+
+Είτε είστε μεμονωμένος επαγγελματίας είτε διαχειρίζεστε έναν στόλο με πολλούς οδηγούς και συνεργάτες,
+το TransferVista προσαρμόζεται στις ανάγκες σας.
+
+<div style="margin-inline: auto; max-width: max-content;">
+    <LinkButton
+        href="https://transfervista.com/pricing"
+        variant="primary"
+        icon="rocket"
+        iconPlacement="start"
+    >
+    Δωρεαν Εγγραφη
+    </LinkButton>
+</div>
+
+### Βασικές δυνατότητες
+
+<CardGrid>
+  <Card title="Διαχείριση κρατήσεων" icon="list-format">
+    Διαχειριστείτε κρατήσεις μεταφορών και εκδρομών από έναν κεντρικό πίνακα ελέγχου. Παρακολουθήστε την κατάσταση
+    των κρατήσεων, διαχειριστείτε τις πληρωμές και οργανώστε τα πάντα με προβολές ημερολογίου και λίστας.
+
+    [Μάθετε περισσότερα](/docs/el/bookings/01-overview/)
+  </Card>
+  <Card title="Online φόρμα κρατήσεων" icon="laptop">
+    Προσφέρετε στους πελάτες σας μια επώνυμη εμπειρία κράτησης. Ενσωματώστε μια προσαρμόσιμη φόρμα κρατήσεων
+    στον ιστότοπό σας και ξεχάστε τις διπλές κρατήσεις χάρη στους ελέγχους διαθεσιμότητας σε πραγματικό χρόνο.
+
+    [Μάθετε περισσότερα](/docs/el/booking-form/01-overview/)
+  </Card>
+  <Card title="Οχήματα και τιμολόγηση" icon="setting">
+    Ρυθμίστε τα οχήματά σας, ορίστε περιοχές εξυπηρέτησης και διαμορφώστε ευέλικτη τιμολόγηση με τιμοκαταλόγους,
+    χρεώσεις βάσει απόστασης ή διαδρομής και πρόσθετες υπηρεσίες.
+
+    [Μάθετε περισσότερα](/docs/el/catalog/01-vehicles/)
+  </Card>
+  <Card title="Έλεγχος διαθεσιμότητας" icon="approve-check-circle">
+    Ορίστε πού και πότε δραστηριοποιείστε. Καθορίστε ζώνες εξυπηρέτησης και ώρες λειτουργίας και αποκλείστε
+    ημερομηνίες κατά τις οποίες δεν είστε διαθέσιμοι.
+
+    [Μάθετε περισσότερα](/docs/el/availability/01-overview/)
+  </Card>
+  <Card title="Ομάδα και οδηγοί" icon="comment-alt">
+    Προσθέστε μέλη στην ομάδα με δικαιώματα βάσει ρόλων. Οι οδηγοί διαθέτουν τη δική τους διεπαφή για να βλέπουν
+    τις αναθέσεις τους και να ενημερώνουν την κατάσταση των κρατήσεων.
+
+    [Μάθετε περισσότερα](/docs/el/team/01-members/)
+  </Card>
+  <Card title="Δίκτυο συνεργατών" icon="random">
+    Συνεργαστείτε με συνεργάτες κρατήσεων που κερδίζουν προμήθεια ή αναθέστε μεταφορές σε εξωτερικούς συνεργάτες
+    εκμετάλλευσης όταν χρειάζεστε επιπλέον χωρητικότητα.
+
+    [Μάθετε περισσότερα](/docs/el/partners/01-overview/)
+  </Card>
+  <Card title="Επικοινωνίες" icon="comment">
+    Οι αυτοματοποιημένες ειδοποιήσεις email κρατούν τους πελάτες, τους διαχειριστές και τους οδηγούς ενημερωμένους
+    σε κάθε στάδιο του κύκλου ζωής μιας κράτησης.
+
+    [Μάθετε περισσότερα](/docs/el/communications/01-email-templates/)
+  </Card>
+  <Card title="Αναφορές και τιμολόγηση" icon="document">
+    Δημιουργήστε αναφορές για τις κρατήσεις και τα έσοδα. Εκδώστε τιμολόγια για οδηγούς και συνεργάτες με βάση
+    τις ολοκληρωμένες μεταφορές.
+
+    [Μάθετε περισσότερα](/docs/el/reports/01-generating-reports/)
+  </Card>
+  <Card title="Ενσωματώσεις" icon="external">
+    Συνδεθείτε με το Stripe για online πληρωμές, συγχρονίστε τις κρατήσεις με το Google Calendar και παρακολουθήστε
+    τις μετατροπές με το Google Analytics και τις διαφημίσεις Google.
+
+    [Μάθετε περισσότερα](/docs/el/settings/06-integrations/)
+  </Card>
+</CardGrid>
+
+## Τι ακολουθεί;
+
+Είστε έτοιμοι να ξεκινήσετε; Ακολουθήστε τον οδηγό Γρήγορης εκκίνησης για να ρυθμίσετε τον λογαριασμό σας
+και να λάβετε την πρώτη σας κράτηση ή εξερευνήστε τον Πίνακα ελέγχου για να δείτε πώς λειτουργεί το TransferVista.
+
+<CardGrid>
+  <LinkCard
+    title="Γρήγορη εκκίνηση"
+    description="Ρυθμίστε τον λογαριασμό σας και λάβετε την πρώτη σας κράτηση μέσα σε λίγα λεπτά."
+    href="/docs/el/getting-started/02-quick-start/"
+  />
+  <LinkCard
+    title="Επισκόπηση πίνακα ελέγχου"
+    description="Μάθετε να περιηγείστε στον πίνακα ελέγχου και να παρακολουθείτε την επιχείρησή σας."
+    href="/docs/el/getting-started/03-dashboard-overview/"
+  />
+</CardGrid>

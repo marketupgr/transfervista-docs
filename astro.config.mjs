@@ -42,25 +42,88 @@ export default defineConfig({
         {
           label: "Getting Started",
           autogenerate: { directory: "getting-started" },
+          translations: {
+            el: "Αρχιζοντας",
+          },
         },
-        { label: "Bookings", autogenerate: { directory: "bookings" } },
-        { label: "Driver Experience", autogenerate: { directory: "drivers" } },
-        { label: "Settings", autogenerate: { directory: "settings" } },
-        { label: "Catalog", autogenerate: { directory: "catalog" } },
-        { label: "Availability", autogenerate: { directory: "availability" } },
-        { label: "Team Management", autogenerate: { directory: "team" } },
+        {
+          label: "Bookings",
+          autogenerate: { directory: "bookings" },
+          translations: {
+            el: "Κρατήσεις",
+          },
+        },
+        {
+          label: "Driver Experience",
+          autogenerate: { directory: "drivers" },
+          translations: {
+            el: "Εμπειρία οδηγού",
+          },
+        },
+        {
+          label: "Settings",
+          autogenerate: { directory: "settings" },
+          translations: {
+            el: "Ρυθμίσεις",
+          },
+        },
+        {
+          label: "Catalog",
+          autogenerate: { directory: "catalog" },
+          translations: {
+            el: "Κατάλογος",
+          },
+        },
+        {
+          label: "Availability",
+          autogenerate: { directory: "availability" },
+          translations: {
+            el: "Διαθεσιμότητα",
+          },
+        },
+        {
+          label: "Team Management",
+          autogenerate: { directory: "team" },
+          translations: {
+            el: "Διαχείριση ομάδας",
+          },
+        },
         {
           label: "Communications",
           autogenerate: { directory: "communications" },
+          translations: {
+            el: "Επικοινωνία",
+          },
         },
-        { label: "Partners", autogenerate: { directory: "partners" } },
+        {
+          label: "Partners",
+          autogenerate: { directory: "partners" },
+          translations: {
+            el: "Συνεργάτες",
+          },
+        },
         {
           label: "Tours",
           badge: "Add-on",
           autogenerate: { directory: "tours" },
+          translations: {
+            el: "Εκδρομες",
+          },
         },
-        { label: "Reports & Invoices", autogenerate: { directory: "reports" } },
-        { label: "Booking Form", autogenerate: { directory: "booking-form" } },
+        {
+          label: "Reports & Invoices",
+          autogenerate: { directory: "reports" },
+          translations: {
+            el: "Αναφορές & Τιμολόγια",
+          },
+        },
+        {
+          label: "Booking Form",
+          autogenerate: { directory: "booking-form" },
+          translations: {
+            el: "Φόρμα κράτησης",
+          },
+        },
       ],
       social: [
         {

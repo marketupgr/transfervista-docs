@@ -4,6 +4,8 @@ description: Overview of TransferVista, key features, and target audience
 ---
 
 import { Card, CardGrid, LinkButton, LinkCard } from '@astrojs/starlight/components';
+import appStoreBadge from '../../../../assets/app-store-badge.svg';
+import googlePlayBadge from '../../../../assets/google-play-badge.svg';
 
 TransferVista is a complete booking and operations platform built specifically for transfer companies
 and tour operators. If you're running private car services, or guided tours, TransferVista gives
@@ -11,6 +13,25 @@ you everything you need to manage bookings, assign drivers, and grow your busine
 
 Take TransferVista on the road with you. Available on all platforms - web, iOS, and Android -
 so you can manage your transfers from anywhere.
+
+<div style="display:flex;justify-content:center">
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem;">
+    <a href="https://apps.apple.com/us/app/transfervista/id6762343033" aria-label="Download TransferVista on the App Store">
+      <img
+        src={appStoreBadge.src}
+        alt="Download on the App Store"
+        style="display: block; width: auto; height: 54px;"
+      />
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.transfervista.pro" aria-label="Get TransferVista on Google Play">
+      <img
+        src={googlePlayBadge.src}
+        alt="Get it on Google Play"
+        style="display: block; width: auto; height: 54px;"
+      />
+    </a>
+  </div>
+</div>
 
 ## Who is TransferVista for?
 
